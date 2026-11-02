@@ -1,0 +1,372 @@
+{
+  "site": {
+    "name": "KeerthiWIKI",
+    "tagline": "The personal encyclopedia of Keerthi K P",
+    "articleTitle": "Keerthi K P",
+    "lastUpdated": "November 2026",
+    "language": "en"
+  },
+  "person": {
+    "name": "Keerthi K P",
+    "born": "22 April 2006",
+    "ageNote": "Age changes over time; omitted from the article",
+    "nationality": "Indian",
+    "hometown": "Chennai, Tamil Nadu, India",
+    "education": "R.M.D. Engineering College",
+    "degree": "B.E. Computer Science and Engineering",
+    "specialization": "Cybersecurity",
+    "honors": "Artificial Intelligence",
+    "graduation": "Expected May 2027",
+    "cgpa": "8.62/10",
+    "fields": [
+      "Computer science",
+      "Cybersecurity",
+      "Open-source intelligence",
+      "Digital forensics",
+      "Software development",
+      "Artificial intelligence"
+    ],
+    "knownFor": [
+      "PhishMate / PhishMateBERT",
+      "ViewLing",
+      "ParamStock",
+      "ClawCTF organization"
+    ],
+    "photo": {
+      "src": "images/keerthi-profile.jpg",
+      "alt": "Portrait of Keerthi K P",
+      "caption": "Keerthi K P"
+    }
+  },
+  "lead": "Keerthi K P (born 22 April 2006) is an Indian computer science student pursuing a Bachelor of Engineering in Computer Science and Engineering at R.M.D. Engineering College, Chennai. She specializes in Cybersecurity and is pursuing an honors track in Artificial Intelligence. Her interests include cybersecurity, open-source intelligence (OSINT), digital forensics, software development and artificial intelligence. She has participated in programming competitions, hackathons and cybersecurity events.",
+  "sections": [
+    {
+      "id": "early-life",
+      "title": "Early life and education",
+      "paragraphs": [
+        "Keerthi was born on 22 April 2006 in Chennai, Tamil Nadu, India. She began her schooling at Ebenezer Marcus Matriculation School, where she studied from kindergarten, before attending Velammal Vidyalaya, Melayanambakkam, through Class XII.",
+        "Her early interest in technology developed through experimenting with computer settings and helping others troubleshoot technical problems. She was introduced to programming through turtle graphics during middle school, where she experimented with controlling on-screen movement through basic commands.",
+        "She later learned Microsoft Excel and studied Python as a major subject in higher secondary school. She completed Class XII in the Physics, Chemistry and Mathematics stream with Computer Science, graduating in May 2023 with 87%.",
+        "In August 2023, she enrolled at R.M.D. Engineering College to pursue a Bachelor of Engineering in Computer Science and Engineering, specializing in Cybersecurity with honors in Artificial Intelligence."
+      ],
+      "images": [
+        {
+          "src": "images/education-school.jpg",
+          "alt": "School or education-related photograph",
+          "caption": "Velammal Vidyalaya, where Keerthi studied through Class XII.",
+          "align": "right"
+        }
+      ]
+    },
+    {
+      "id": "career",
+      "title": "Career and experience",
+      "subsections": [
+        {
+          "title": "Infosys Springboard",
+          "paragraphs": [
+            "Between December 2024 and February 2025, Keerthi worked as a Python intern at Infosys Springboard, contributing to the Unified Family Finance Tracker.",
+            "The project was a full-stack budgeting platform supporting multiple user profiles and expense categories. She contributed to the expense management module and served as Scrum Master and Product Manager, coordinating project delivery, team activities and module integration."
+          ],
+          "images": [
+            {
+              "src": "https://github.com/user-attachments/assets/059bb3ae-5fbe-45ca-9285-b32162fb9bce",
+              "alt": "Screenshot or photograph documenting Keerthi's role in the Infosys Springboard project",
+              "caption": "Evidence of Keerthi's contribution and project responsibilities in the Unified Family Finance Tracker.",
+              "align": "right"
+            }
+          ]
+        },
+        {
+          "title": "Tamil Nadu Police Cyber Crime Wing",
+          "paragraphs": [
+            "From June to July 2026, Keerthi worked with the Tamil Nadu Police Cyber Crime Wing on an Android APK malware analysis tool.",
+            "Her contribution focused on frontend development. She redesigned the interface to improve usability and accessibility for non-technical users and simplified the presentation of malware analysis results."
+          ],
+          "images": [
+            {
+              "src": "images/cybercrime-work.jpg",
+              "alt": "Screenshot documenting frontend work on the Android APK malware analysis tool",
+              "caption": "Interface work on the Android APK malware analysis tool.",
+              "align": "left"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "projects",
+      "title": "Projects",
+      "items": [
+        {
+          "name": "ViewLing",
+          "description": "An individual project to visualize exported WhatsApp conversations and present chat data in a more accessible visual form. The project is being developed for personal family use.",
+          "role": "Individual developer",
+          "image": {
+            "src": "images/viewling.jpg",
+            "alt": "ViewLing application screenshot",
+            "caption": "ViewLing, a WhatsApp export visualizer."
+          },
+          "link": "https://github.com/keerthiparam"
+        },
+        {
+          "name": "PhishMate / PhishMateBERT",
+          "description": "A phishing-detection browser extension initiated as PhishMate during FOSS Hack 2025 and later developed into PhishMateBERT. The later iteration uses a DeBERTa-based classification approach.",
+          "role": "Project developer",
+          "image": {
+            "src": "https://github.com/user-attachments/assets/b57aeccb-8807-46a8-b8cd-6ac134825d86",
+            "alt": "PhishMate or PhishMateBERT screenshot",
+            "caption": "PhishMate and its subsequent iteration, PhishMateBERT."
+          },
+          "link": "https://devpost.com/software/phishmate"
+        },
+        {
+          "name": "ParamStock",
+          "description": "An individual stock-monitoring and notification project. It uses Yahoo Finance data and Twilio to send stock alerts through WhatsApp, with Flask as the application backend.",
+          "role": "Individual developer",
+          "image": {
+            "src": "images/paramstock.jpg",
+            "alt": "ParamStock dashboard or WhatsApp alert screenshot",
+            "caption": "ParamStock stock-monitoring and WhatsApp alert interface."
+          },
+          "link": "https://github.com/keerthiparam"
+        },
+        {
+          "name": "TimeCapsule",
+          "description": "A decentralized internet archival project designed to preserve web content with verifiable integrity, using SHA-256 hashing, IPFS and OpenTimestamps. The project received second runner-up recognition at Defy'26.",
+          "role": "Team project",
+          "image": {
+            "src": "https://github.com/user-attachments/assets/82693a46-e0b0-4533-bd7b-625afaf00082",
+            "alt": "TimeCapsule project architecture or demonstration",
+            "caption": "TimeCapsule project architecture or demonstration."
+          },
+          "link": "https://github.com/keerthiparam"
+        },
+        {
+          "name": "Dust Buster",
+          "description": "A hardware prototype developed by a four-member team for the Science Day Project Expo at R.M.D. Engineering College. It uses an Arduino Uno and an ultrasonic distance sensor to detect dust or particles inside a chalk box and trigger an alert. The project was a finalist at the expo and was framed around UN Sustainable Development Goal 9.",
+          "role": "Team project",
+          "image": {
+            "src": "images/dust-buster.jpg",
+            "alt": "Dust Buster Arduino hardware prototype",
+            "caption": "Dust Buster hardware prototype. Project documentation supplied by Keerthi."
+          },
+          "link": "https://github.com/keerthiparam/Dust-Buster"
+        },
+        {
+          "name": "YapFormer",
+          "description": "A team project involving a transformer-based language model built from scratch. Keerthi contributed to the console interface and terminal-based user experience; she did not develop the model architecture.",
+          "role": "Team project; console UI contribution",
+          "image": {
+            "src": "https://github.com/user-attachments/assets/4f6f1d3b-4388-4657-a99c-e4b7251e04f8",
+            "alt": "YapFormer console interface screenshot",
+            "caption": "Console interface contribution to YapFormer."
+          },
+          "link": "https://github.com/keerthiparam"
+        }
+      ]
+    },
+    {
+      "id": "leadership",
+      "title": "Leadership and event organization",
+      "paragraphs": [
+        "Keerthi served as lead organizer of ClawCTF, a cybersecurity competition held as part of Rendezvous 2k26, the Computer Science and Engineering symposium at R.M.D. Engineering College.",
+        "Her responsibilities included event management and the creation of OSINT challenges. The event covered multiple cybersecurity domains and received more than 60 registrations."
+      ],
+      "images": [
+        {
+          "src": "images/clawctf.jpg",
+          "alt": "ClawCTF event photograph, organizer screenshot or challenge material",
+          "caption": "ClawCTF at Rendezvous 2k26. Add an event photograph or evidence of the organizer role.",
+          "align": "right"
+        }
+      ]
+    }
+  ],
+  "medals": [
+    {
+      "date": "February 2026",
+      "sort": "2026-02",
+      "event": "TCS CodeVita Season XIII — Best Women Coders",
+      "gold": 0,
+      "silver": 1,
+      "bronze": 0
+    },
+    {
+      "date": "January 2026",
+      "sort": "2026-01",
+      "event": "Defy'26 — TimeCapsule",
+      "gold": 0,
+      "silver": 0,
+      "bronze": 1
+    },
+    {
+      "date": "December 2025",
+      "sort": "2025-12",
+      "event": "RootSprout Build From Scratch",
+      "gold": 1,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "date": "June 2025",
+      "sort": "2025-06",
+      "event": "AmpliCode Hackathon — Security and Online Safety",
+      "gold": 1,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "date": "February 2025 (confirm)",
+      "sort": "2025-02",
+      "event": "REVIL 2.0 — Binary Breakout, Chennai Institute of Technology",
+      "gold": 1,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "date": "2024 (month to confirm)",
+      "sort": "2024-12",
+      "event": "SheBuilds — Draw the GitHub Octocat Challenge",
+      "gold": 0,
+      "silver": 0,
+      "bronze": 1
+    },
+    {
+      "date": "August 2024",
+      "sort": "2024-08",
+      "event": "Neo Codeathon — R.M.K. Group of Institutions",
+      "gold": 1,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "date": "2023",
+      "sort": "2023-12",
+      "event": "Eco Club Short Video Making Competition — RMDEC",
+      "gold": 1,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "date": "Date not specified",
+      "sort": "0000-00",
+      "event": "MLH × Sapiens Campus × OS Community Chennai Meetup — Individual Quiz",
+      "gold": 1,
+      "silver": 0,
+      "bronze": 0
+    }
+  ],
+  "otherAchievements": [
+    {
+      "title": "ExploitX — Chennai Institute of Technology",
+      "detail": "Team Yakuza placed seventh in the preliminaries and among the top five best performers in the finals."
+    },
+    {
+      "title": "MLH × Sapiens Campus × OS Community Chennai Meetup",
+      "detail": "Individual quiz competition winner."
+    },
+    {
+      "title": "R.M.D. Engineering College Project Expo 2024",
+      "detail": "Finalist with the Dust Buster team."
+    },
+    {
+      "title": "Women's Day 2024 — RMDEC",
+      "detail": "Volunteer."
+    },
+    {
+      "title": "Language Club Writing Competition — RMDEC",
+      "detail": "Recognition in a writing competition on a pollution-related topic; exact award and title to be confirmed."
+    }
+  ],
+  "certifications": [
+    "Artificial Intelligence Essentials (AIE), October 2026",
+    "Oracle Certified Professional (OCP), Java SE 17, March 2026",
+    "Ethical Hacking Essentials (EHE), July 2025",
+    "C++ Programming, Udemy, January 2024",
+    "TOEFL ITP: 620/677, CEFR C1 Proficient, March 2026"
+  ],
+  "nptel": [
+    "Top 1% and Gold — Soft Skills",
+    "Silver — Principles of Management",
+    "Silver — Data Structures and Algorithms using Python",
+    "Elite — Database Management Systems",
+    "Elite — Programming in Java"
+  ],
+  "interests": [
+    "Cybersecurity",
+    "Open-source intelligence (OSINT)",
+    "Digital forensics",
+    "Software development",
+    "Artificial intelligence and machine learning"
+  ],
+  "personalInterests": [
+    "Genshin Impact",
+    "Minecraft",
+    "Skribbl"
+  ],
+  "externalLinks": [
+    {
+      "label": "GitHub",
+      "url": "https://github.com/keerthiparam"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://linkedin.com/in/keerthiparam"
+    },
+    {
+      "label": "LeetCode",
+      "url": "https://leetcode.com/u/keerthiparam/"
+    },
+    {
+      "label": "Current portfolio — KeerthiOS",
+      "url": "https://keerthiparam.vercel.app/"
+    }
+  ],
+  "imageInstructions": [
+    {
+      "file": "images/keerthi-profile.jpg",
+      "use": "Portrait for the infobox."
+    },
+    {
+      "file": "images/infosys-role.jpg",
+      "use": "Screenshot, certificate, project board or event photo that documents your Infosys team role."
+    },
+    {
+      "file": "images/cybercrime-work.jpg",
+      "use": "Screenshot of the frontend work you are allowed to show; remove confidential or sensitive information."
+    },
+    {
+      "file": "images/viewling.jpg",
+      "use": "ViewLing screenshots."
+    },
+    {
+      "file": "images/phishmate.jpg",
+      "use": "PhishMate / PhishMateBERT screenshots."
+    },
+    {
+      "file": "images/paramstock.jpg",
+      "use": "ParamStock dashboard or WhatsApp alert screenshots; hide phone numbers and private data."
+    },
+    {
+      "file": "images/timecapsule.jpg",
+      "use": "TimeCapsule architecture or demo screenshots."
+    },
+    {
+      "file": "images/dust-buster.jpg",
+      "use": "Dust Buster hardware photographs; the uploaded PDF contains suitable prototype images."
+    },
+    {
+      "file": "images/yapformer.jpg",
+      "use": "YapFormer console UI screenshot showing your contribution."
+    },
+    {
+      "file": "images/clawctf.jpg",
+      "use": "ClawCTF event photo, organizer evidence or OSINT challenge screenshot."
+    },
+    {
+      "file": "images/awards/",
+      "use": "Create this folder for award photographs and certificates; add image entries to the relevant section in data.json when ready."
+    }
+  ]
+}

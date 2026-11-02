@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Keerthi K P — a Wikipedia-inspired personal portfolio.">
+  <title>Keerthi K P — KeerthiWIKI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#"><span class="brand-mark">K</span><span><strong id="site-name">KeerthiWIKI</strong><small id="site-tagline">The personal encyclopedia</small></span></a>
+    <div class="header-tools"><span>Personal encyclopedia</span><span class="tool-divider">|</span><a href="#external-links">External links</a></div>
+  </header>
+  <div class="page-shell">
+    <main class="article">
+      <div class="article-tabs"><span class="active-tab">Article</span><a href="#external-links">Read more</a><span class="article-tools">KeerthiWIKI</span></div>
+      <div class="title-row">
+        <button class="contents-trigger" id="toc-open" type="button" aria-label="Open contents" aria-expanded="true" title="Contents">☷</button>
+        <h1 id="article-title">Keerthi K P</h1>
+      </div>
+      <div class="subtitle">From KeerthiWIKI, the personal encyclopedia</div>
+      <nav class="toc-popover" id="toc-panel" aria-label="Contents">
+        <div class="toc-popover-head"><strong>Contents</strong><button id="toc-toggle" type="button" aria-expanded="true">hide</button></div>
+        <ol id="toc-list"></ol>
+      </nav>
+      <section id="overview">
+        <div class="infobox" id="infobox"></div>
+        <p id="lead"></p>
+      </section>
+      <nav class="toc" aria-label="Contents">
+        <div class="toc-title">Contents <button id="toc-toggle" type="button" aria-expanded="true">[hide]</button></div>
+        <ol id="toc-list"></ol>
+      </nav>
+      <div id="article-sections"></div>
+      <section id="medal-record">
+        <h2>Medal record</h2>
+        <div class="medal-wrap">
+          <table class="medal-table">
+            <thead><tr><th colspan="4" class="medal-heading">Medal record</th></tr><tr><th>Event</th><th class="gold-head">G</th><th class="silver-head">S</th><th class="bronze-head">B</th></tr></thead>
+            <tbody id="medal-body"></tbody>
+            <tfoot><tr><th colspan="4" class="medal-list-heading"><button id="medal-toggle" type="button" aria-expanded="true">Medal list [hide]</button></th></tr></tfoot>
+          </table>
+          <div id="medal-summary" class="medal-summary"></div>
+        </div>
+        <p class="small-note">Events are shown in reverse chronological order. The medal table includes podium finishes and wins; finalist positions and volunteering are listed separately.</p>
+      </section>
+      <section id="other-achievements"><h2>Other achievements and participation</h2><ul id="other-list"></ul></section>
+      <section id="certifications"><h2>Certifications and academic recognition</h2><ul id="cert-list"></ul><h3>NPTEL recognition</h3><ul id="nptel-list"></ul></section>
+      <section id="interests"><h2>Technical and personal interests</h2><p class="field-list" id="field-list"></p><p id="personal-interests"></p></section>
+      <section id="external-links"><h2>External links</h2><ul id="links-list"></ul></section>
+      <footer class="article-footer">This article is maintained as part of KeerthiWIKI. Images and supporting evidence are supplied by the portfolio owner. Last updated: <span id="last-updated"></span>.</footer>
+    </main>
+  </div>
+  <script>
+  const $ = (s, root=document) => root.querySelector(s);
+  const esc = (s="") => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+  const link = (url,label) => `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(label)}</a>`;
+  function figure(img, align="right") {
+    if (!img) return "";
+    const media = img.type === "video"
+      ? `<video controls preload="metadata" playsinline aria-label="${esc(img.alt || "Project video")}"><source src="${esc(img.src)}"><span>Your browser does not support HTML video.</span></video>`
+      : `<a href="${esc(img.src)}" target="_blank" rel="noopener"><img src="${esc(img.src)}" alt="${esc(img.alt || "")}" loading="lazy" onerror="this.closest('figure').classList.add('image-missing');this.style.display='none'"></a>`;
+    return `<figure class="thumb ${align === "left" ? "thumb-left" : "thumb-right"}">
+      ${media}
+      <figcaption>${esc(img.caption || "")}<span class="missing-hint">Media not available — check the URL in data.json.</span></figcaption>
+    </figure>`;
+  }
+  function paragraphs(items=[]) { return items.map(p=>`<p>${esc(p)}</p>`).join(""); }
+  function renderSection(s) {
+    let out = `<section id="${esc(s.id)}"><h2>${esc(s.title)}</h2>`;
+    if (s.images) s.images.forEach(i => out += figure(i, i.align));
+    if (s.paragraphs) out += paragraphs(s.paragraphs);
+    if (s.subsections) s.subsections.forEach(sub => {
+      out += `<div class="clearfix"><h3>${esc(sub.title)}</h3>`;
+      if (sub.images) sub.images.forEach(i => out += figure(i, i.align));
+      out += paragraphs(sub.paragraphs || []) + `</div>`;
+    });
+    if (s.items) s.items.forEach(item => {
+      const projectId = `project-${s.items.indexOf(item)}-${item.name.toLowerCase().replace(/[^a-z0-9]+/g,"-")}`;
+      out += `<div class="project-entry clearfix" id="${esc(projectId)}"><h3>${esc(item.name)}</h3>`;
+      if (item.image) out += figure(item.image, "right");
+      out += `<p>${esc(item.description)}</p><p class="role-line"><b>Contribution:</b> ${esc(item.role)}</p>`;
+      if (item.link) out += `<p class="project-link">${link(item.link, "Project / repository")}</p>`;
+      out += `</div>`;
+    });
+    out += `<div class="clearfix"></div></section>`;
+    return out;
+  }
+  async function init() {
+    try {
+      const response = await fetch("data.json");
+      if (!response.ok) throw new Error("Could not load data.json");
+      const d = await response.json();
+      $("#site-name").textContent = d.site.name;
+      $("#site-tagline").textContent = d.site.tagline;
+      $("#article-title").textContent = d.site.articleTitle;
+      $("#last-updated").textContent = d.site.lastUpdated;
+      $("#lead").textContent = d.lead;
+      const p = d.person;
+      $("#infobox").innerHTML = `<div class="infobox-title">${esc(p.name)}</div>
+        <div class="infobox-photo"><img src="${esc(p.photo.src)}" alt="${esc(p.photo.alt)}" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="missing-hint">Add your portrait at ${esc(p.photo.src)}</span><div class="caption">${esc(p.photo.caption)}</div></div>
+        <table>${[
+          ["Born",p.born],["Hometown",p.hometown],["Nationality",p.nationality],["Education",p.education],["Degree",p.degree],["Specialization",p.specialization],["Honors",p.honors],["Graduation",p.graduation],["CGPA",p.cgpa],["Fields",p.fields.join(", ")]
+        ].map(([k,v])=>`<tr><th>${esc(k)}</th><td>${esc(v)}</td></tr>`).join("")}</table>`;
+      $("#article-sections").innerHTML = d.sections.map(renderSection).join("");
+      const tocRows = d.sections.map((s,i) => {
+        let nested = "";
+        if (s.subsections?.length) nested = `<ol>${s.subsections.map(sub=>`<li><a href="#${esc(s.id)}">${esc(sub.title)}</a></li>`).join("")}</ol>`;
+        if (s.items?.length) nested = `<ol>${s.items.map((item,j)=>`<li><a href="#project-${j}-${esc(item.name.toLowerCase().replace(/[^a-z0-9]+/g,"-"))}">${esc(item.name)}</a></li>`).join("")}</ol>`;
+        return `<li><a href="#${esc(s.id)}">${esc(s.title)}</a>${nested}</li>`;
+      }).join("");
+      $("#toc-list").innerHTML = `<li class="toc-top"><a href="#overview">(Top)</a></li>${tocRows}
+        <li><a href="#medal-record">Medal record</a></li>
+        <li><a href="#other-achievements">Other achievements and participation</a></li>
+        <li><a href="#certifications">Certifications and academic recognition</a></li>
+        <li><a href="#interests">Technical and personal interests</a></li>
+        <li><a href="#external-links">External links</a></li>`;
+      const medals = [...d.medals].sort((a,b)=>b.sort.localeCompare(a.sort));
+      $("#medal-body").innerHTML = medals.map(m=>`<tr><td><span class="medal-date">${esc(m.date)}</span><br>${esc(m.event)}</td><td class="gold-cell">${m.gold || "–"}</td><td class="silver-cell">${m.silver || "–"}</td><td class="bronze-cell">${m.bronze || "–"}</td></tr>`).join("");
+      const totals = medals.reduce((a,m)=>({gold:a.gold+m.gold,silver:a.silver+m.silver,bronze:a.bronze+m.bronze}),{gold:0,silver:0,bronze:0});
+      $("#medal-summary").innerHTML = `<div><b>Gold</b><span>${totals.gold}</span></div><div><b>Silver</b><span>${totals.silver}</span></div><div><b>Bronze</b><span>${totals.bronze}</span></div>`;
+      $("#other-list").innerHTML = d.otherAchievements.map(a=>`<li><b>${esc(a.title)}:</b> ${esc(a.detail)}</li>`).join("");
+      $("#cert-list").innerHTML = d.certifications.map(x=>`<li>${esc(x)}</li>`).join("");
+      $("#nptel-list").innerHTML = d.nptel.map(x=>`<li>${esc(x)}</li>`).join("");
+      $("#field-list").textContent = d.interests.join(" · ");
+      $("#personal-interests").textContent = "Outside technology, she enjoys playing " + d.personalInterests.join(", ") + ".";
+      $("#links-list").innerHTML = d.externalLinks.map(x=>`<li>${link(x.url,x.label)}</li>`).join("");
+      const tocPanel = $("#toc-panel"), tocOpen = $("#toc-open");
+      $("#toc-toggle").addEventListener("click", () => { tocPanel.classList.remove("is-open"); tocOpen.setAttribute("aria-expanded","false"); });
+      tocOpen.addEventListener("click", () => { const open = !tocPanel.classList.contains("is-open"); tocPanel.classList.toggle("is-open",open); tocOpen.setAttribute("aria-expanded",String(open)); });
+      $("#toc-list").addEventListener("click", e => { if (e.target.closest("a")) { tocPanel.classList.remove("is-open"); tocOpen.setAttribute("aria-expanded","false"); } });
+      $("#medal-toggle").addEventListener("click", e=>{const summary=$("#medal-summary");const hidden=summary.hidden=!summary.hidden;e.currentTarget.textContent=hidden?"Medal list [show]":"Medal list [hide]";e.currentTarget.setAttribute("aria-expanded",String(!hidden));});
+    } catch (err) {
+      document.querySelector(".article").insertAdjacentHTML("beforeend", `<p class="load-error">Unable to load data.json. Run this site through a local web server and keep index.html, style.css and data.json in the same folder. Details: ${esc(err.message)}</p>`);
+    }
+  }
+  init();
+  </script>
+</body>
+</html>

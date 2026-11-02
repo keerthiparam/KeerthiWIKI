@@ -1,0 +1,147 @@
+* { box-sizing: border-box; }
+:root {
+  --wiki-blue: #0645ad; --wiki-border: #a2a9b1; --wiki-muted: #54595d;
+  --wiki-bg: #f8f9fa; --wiki-page: #fff; --wiki-link: #0645ad;
+}
+html { scroll-behavior: smooth; }
+body { margin: 0; color: #202122; background: #f6f6f6; font: 14px/1.65 Arial, Helvetica, sans-serif; }
+a { color: var(--wiki-link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.site-header { height: 66px; border-bottom: 1px solid #c8ccd1; background: #fff; display:flex; align-items:center; justify-content:space-between; padding: 0 max(22px, calc((100vw - 1440px)/2)); }
+.brand { display:flex; align-items:center; gap:10px; color:#202122; }
+.brand:hover { text-decoration:none; }
+.brand-mark { width:37px;height:37px;border:1px solid #a2a9b1;border-radius:50%;display:grid;place-items:center;font: bold 22px Georgia,serif;color:#54595d; }
+.brand strong { display:block;font: 22px Georgia,serif; }
+.brand small { display:block;color:#54595d;font-size:11px;line-height:1.2; }
+.header-tools { color:#54595d;font-size:12px;display:flex;gap:12px;align-items:center; }
+.page-shell { max-width:1440px;margin:0 auto;display:grid;grid-template-columns:190px minmax(0,1fr);min-height:calc(100vh - 66px); }
+.sidebar { padding:26px 18px; font-size:13px; }
+.sidebar a { display:block;padding:4px 0; }
+.sidebar-heading { font-weight:bold;border-bottom:1px solid #c8ccd1;margin-bottom:9px;padding-bottom:6px; }
+.sidebar-note { margin-top:28px;color:#72777d;font-size:11px;line-height:1.5;border-top:1px solid #c8ccd1;padding-top:10px; }
+.article { background:var(--wiki-page);border-left:1px solid #a7d7f9;min-width:0;padding:22px 38px 55px; }
+.article-tabs { height:30px;border-bottom:1px solid #a2a9b1;margin:-5px 0 22px;display:flex;gap:22px;font-size:12px;color:#54595d; }
+.article-tabs a { color:#54595d; }
+.active-tab { border-bottom:2px solid #202122;padding-bottom:8px;color:#202122;font-weight:bold; }
+.article-tools { margin-left:auto; }
+h1,h2,h3 { font-family:Georgia,"Times New Roman",serif;font-weight:normal;color:#202122; }
+h1 { font-size:2.15rem;line-height:1.2;margin:0 0 6px;padding-bottom:9px;border-bottom:1px solid #a2a9b1; }
+.subtitle { color:#54595d;font-size:12px;margin-bottom:17px; }
+h2 { font-size:1.55rem;border-bottom:1px solid #a2a9b1;padding-bottom:4px;margin:30px 0 12px; }
+h3 { font-family:Arial,Helvetica,sans-serif;font-size:1.08rem;font-weight:bold;margin:22px 0 8px; }
+p { margin:0 0 13px; }
+ul { padding-left:25px; }
+li { margin:4px 0; }
+.infobox { float:right;clear:right;width:300px;margin:0 0 18px 22px;border:1px solid #a2a9b1;background:#f8f9fa;font-size:12px; }
+.infobox-title { background:#b0c4de;text-align:center;font-weight:bold;font-size:15px;padding:7px; }
+.infobox-photo { padding:8px 8px 3px;text-align:center; }
+.infobox-photo img { max-width:100%;max-height:300px;object-fit:contain; }
+.infobox-photo .caption { font-size:11px;color:#54595d;padding:4px; }
+.infobox table { border-collapse:collapse;width:100%; }
+.infobox th,.infobox td { text-align:left;vertical-align:top;padding:5px 7px;border-top:1px solid #eaecf0; }
+.infobox th { width:34%; }
+.toc { display:table;min-width:260px;max-width:100%;background:#f8f9fa;border:1px solid #a2a9b1;padding:10px 16px;margin:22px 0 25px;font-size:13px; }
+.toc-title { text-align:center;font-weight:bold;margin-bottom:6px; }
+.toc-title button,.medal-list-heading button { border:0;background:none;color:#0645ad;cursor:pointer;font:inherit; }
+.toc ol { margin:0;padding-left:25px; }
+.toc li { margin:2px 0; }
+.thumb { width:260px;max-width:45%;border:1px solid #c8ccd1;background:#f8f9fa;padding:4px;margin:4px 0 14px; }
+.thumb-right { float:right;clear:right;margin-left:18px; }
+.thumb-left { float:left;clear:left;margin-right:18px; }
+.thumb img { display:block;width:100%;max-height:260px;object-fit:contain;background:#fff; }
+.thumb figcaption { font-size:12px;line-height:1.45;padding:6px 3px 3px;text-align:left; }
+.missing-hint { display:none;color:#72777d;font-size:11px;font-style:italic; }
+.image-missing { min-height:65px;border-style:dashed; }
+.image-missing .missing-hint { display:block; }
+.project-entry { border-bottom:1px solid #eaecf0;padding-bottom:10px;margin-bottom:12px; }
+.project-entry h3 { margin-top:15px; }
+.role-line { color:#54595d;font-size:12px; }
+.project-link { font-size:12px; }
+.clearfix::after { content:"";display:table;clear:both; }
+.medal-wrap { max-width:620px;background:#f8f9fa;padding:4px;border:1px solid #c8ccd1; }
+.medal-table { width:100%;border-collapse:collapse;font-size:13px; }
+.medal-table th,.medal-table td { padding:4px 7px;text-align:left; }
+.medal-heading { background:#b7ccfa;text-align:center!important;font-size:14px; }
+.medal-table thead tr:nth-child(2) { background:#d8d8d8; }
+.medal-table th:not(:first-child),.medal-table td:not(:first-child) { text-align:center;width:42px; }
+.gold-head,.gold-cell { background:#ffe76b; }
+.silver-head,.silver-cell { background:#d4d4d4; }
+.bronze-head,.bronze-cell { background:#f5c18f; }
+.medal-date { color:#54595d;font-size:11px; }
+.medal-list-heading { background:#d5e1fa;text-align:center!important; }
+.medal-summary { padding:9px 10px;display:flex;gap:22px;font-size:12px; }
+.medal-summary div { display:flex;gap:7px; }
+.medal-summary span { font-weight:bold; }
+.small-note { font-size:11px;color:#54595d;margin-top:7px; }
+.field-list { line-height:2; }
+.article-footer { border-top:1px solid #a2a9b1;margin-top:35px;padding-top:12px;color:#72777d;font-size:11px; }
+.load-error { background:#fee;border:1px solid #c66;padding:12px;color:#900; }
+@media (max-width:850px) {
+  .page-shell { grid-template-columns:1fr; }
+  .sidebar { display:flex;flex-wrap:wrap;gap:7px 15px;padding:10px 16px;border-bottom:1px solid #c8ccd1; }
+  .sidebar-heading,.sidebar-note { display:none; }
+  .sidebar a { display:inline-block; }
+  .article { border-left:0;padding:20px 22px 40px; }
+}
+@media (max-width:560px) {
+  .site-header { padding:0 14px; }
+  .header-tools { display:none; }
+  .article { padding:16px 14px 35px; }
+  h1 { font-size:1.8rem; }
+  .infobox { float:none;width:100%;margin:12px 0 18px; }
+  .thumb,.thumb-right,.thumb-left { float:none;clear:both;width:100%;max-width:100%;margin:12px 0; }
+  .thumb img { max-height:340px; }
+  .medal-wrap { overflow-x:auto; }
+  .medal-table { min-width:430px; }
+}
+
+/* Embedded project videos */
+.thumb video { display:block; width:100%; max-height:300px; background:#111; }
+@media (max-width:560px) {
+  .thumb video { max-height:360px; }
+}
+
+/* Wikipedia-style floating table of contents */
+.page-shell { max-width:1440px; margin:0 auto; display:block; min-height:calc(100vh - 66px); }
+.article { background:#fff; border-left:0; min-width:0; padding:22px 42px 55px; max-width:1120px; margin:0 auto; position:relative; }
+.title-row { display:flex; align-items:center; gap:10px; position:relative; }
+.title-row h1 { flex:1; }
+.contents-trigger {
+  flex:0 0 32px; width:32px; height:32px; padding:0; margin:0 0 8px;
+  border:1px solid #a2a9b1; border-radius:2px; background:#fff; color:#202122;
+  font-size:23px; line-height:1; cursor:pointer; display:grid; place-items:center;
+}
+.contents-trigger:hover { background:#f8f9fa; border-color:#72777d; }
+.toc-popover {
+  position:absolute; z-index:20; top:76px; left:42px;
+  width:min(580px, calc(100% - 84px)); max-height:min(72vh, 610px);
+  overflow:auto; background:#fff; border:1px solid #c8ccd1;
+  box-shadow:0 2px 8px rgba(0,0,0,.18); padding:12px 18px 14px;
+  display:none;
+}
+.toc-popover.is-open { display:block; }
+.toc-popover-head {
+  position:sticky; top:-12px; z-index:1; background:#fff;
+  display:flex; justify-content:center; align-items:center;
+  min-height:32px; border-bottom:1px solid #eaecf0; margin-bottom:8px;
+}
+.toc-popover-head strong { font-size:14px; }
+.toc-popover-head button {
+  position:absolute; right:0; border:0; border-radius:2px; background:#eaecf0;
+  padding:4px 9px; color:#202122; cursor:pointer; font-size:12px;
+}
+.toc-popover ol { margin:0; padding-left:25px; list-style:none; counter-reset:toc; }
+.toc-popover > ol { padding-left:0; }
+.toc-popover li { margin:0; padding:4px 0; line-height:1.35; }
+.toc-popover li ol { padding-left:26px; }
+.toc-popover li ol li { padding:4px 0; }
+.toc-popover a { color:#0645ad; }
+.toc-popover .toc-top { font-weight:bold; padding-bottom:8px; }
+@media (max-width:850px) {
+  .article { padding:20px 22px 40px; }
+  .toc-popover { left:22px; width:min(580px,calc(100% - 44px)); }
+}
+@media (max-width:560px) {
+  .article { padding:16px 14px 35px; }
+  .toc-popover { left:14px; width:calc(100% - 28px); max-height:70vh; }
+}

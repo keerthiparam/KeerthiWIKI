@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keerthi K P - KeerthiWIKI</title>
+    <style>
+        /* Classic Wikipedia Styling */
+        body { font-family: sans-serif; margin: 0; background-color: #f6f6f6; color: #202122; }
+        .container { display: flex; max-width: 1400px; margin: 0 auto; }
+        
+        /* Sidebar */
+        .sidebar { width: 160px; padding: 20px; font-size: 0.85em; background-color: #f6f6f6; }
+        .sidebar a { color: #0645ad; text-decoration: none; display: block; margin-bottom: 5px; }
+        .sidebar a:hover { text-decoration: underline; }
+
+        /* Main Content */
+        .content { background-color: #ffffff; border-left: 1px solid #a7d7f9; padding: 30px 40px; flex-grow: 1; min-height: 100vh; }
+        h1, h2, h3, h4 { font-family: "Linux Libertine", Georgia, serif; font-weight: normal; }
+        h1 { font-size: 2.2em; border-bottom: 1px solid #a2a9b1; padding-bottom: 5px; margin-top: 0; }
+        h2 { font-size: 1.5em; border-bottom: 1px solid #a2a9b1; padding-bottom: 5px; margin-top: 1.5em; }
+        h3 { font-weight: bold; font-size: 1.2em; margin-top: 1.5em; }
+        h4 { font-weight: bold; font-size: 1.1em; margin-top: 1em; margin-bottom: 0.5em; }
+        p, li { line-height: 1.6; font-size: 0.95em; }
+        a { color: #0645ad; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        /* Main Infobox */
+        .infobox { float: right; width: 300px; margin: 0 0 1em 1em; background-color: #f8f9fa; border: 1px solid #a2a9b1; padding: 10px; font-size: 0.9em; }
+        .infobox th { background-color: #b0c4de; text-align: center; padding: 5px; font-size: 1.1em; }
+        .infobox td, .infobox th[scope="row"] { padding: 5px; border-bottom: 1px solid #eaecf0; }
+        .infobox th[scope="row"] { text-align: left; width: 35%; }
+
+        /* Software Sub-Infobox */
+        .infobox-software { float: right; width: 260px; margin: 0 0 1em 1em; background-color: #f8f9fa; border: 1px solid #a2a9b1; padding: 5px; font-size: 0.85em; }
+        .infobox-software th { background-color: #e0e0e0; text-align: center; padding: 5px; }
+        .infobox-software td, .infobox-software th[scope="row"] { padding: 5px; border-bottom: 1px solid #eaecf0; }
+
+        /* Metadata & Hatnotes */
+        .article-metadata { font-size: 0.85em; color: #54595d; margin-top: -10px; margin-bottom: 15px; border-bottom: 1px dotted #ccc; padding-bottom: 5px; }
+        .hatnote { font-style: italic; font-size: 0.9em; margin-bottom: 1em; color: #202122; }
+
+        /* WIKIPEDIA IMAGE THUMBNAILS */
+        .thumb { margin-bottom: 1em; }
+        .tright { float: right; clear: right; margin-left: 1em; }
+        .tleft { float: left; clear: left; margin-right: 1em; }
+        .thumbinner { border: 1px solid #c8ccd1; background-color: #f8f9fa; padding: 3px; font-size: 0.85em; text-align: center; }
+        .thumbimage, .thumbvideo { max-width: 100%; height: auto; border: 1px solid #eaecf0; }
+        .thumbcaption { text-align: left; padding: 5px; line-height: 1.4; }
+
+        /* Tables & Collapsibles */
+        .wikitable { border-collapse: collapse; margin: 1em 0; width: 100%; font-size: 0.9em; border: 1px solid #a2a9b1; }
+        .wikitable th, .wikitable td { border: 1px solid #a2a9b1; padding: 8px; text-align: left; }
+        .wikitable th { background-color: #eaecf0; text-align: center; }
+        .wikitable img { max-height: 40px; vertical-align: middle; }
+        
+        details { background: #f8f9fa; border: 1px solid #a2a9b1; padding: 8px; margin-bottom: 8px; font-size: 0.9em; }
+        summary { font-weight: bold; cursor: pointer; color: #0645ad; }
+        details > p, details > ul { margin-top: 8px; margin-bottom: 0; }
+
+        /* Gallery */
+        .gallery { display: flex; flex-wrap: wrap; gap: 15px; margin: 1em 0; padding: 0; list-style: none; justify-content: center; }
+        .gallery li { background-color: #f8f9fa; border: 1px solid #c8ccd1; padding: 5px; width: 220px; text-align: center; }
+        .gallery img { max-width: 100%; height: auto; border: 1px solid #eaecf0; object-fit: contain; }
+        .gallery .gallery-text { font-size: 0.8em; padding-top: 5px; text-align: left; line-height: 1.3; }
+
+        /* Table of Contents */
+        .toc { background-color: #f8f9fa; border: 1px solid #a2a9b1; display: inline-block; padding: 15px; margin: 15px 0; font-size: 0.9em; min-width: 250px; }
+        .toc-title { font-weight: bold; text-align: center; margin-top: 0; border:none; margin-bottom: 10px; }
+        .toc ul { list-style-type: none; padding-left: 20px; margin-top: 0; margin-bottom: 0; }
+        
+        .clearfix::after { content: ""; clear: both; display: table; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <div style="text-align:center; margin-bottom: 20px;">
+            <img src="YOUR_PORTFOLIO_LOGO_LINK.png" alt="Logo" style="max-width: 80px; margin-bottom: 10px;">
+            <div style="font-family: 'Linux Libertine', serif; font-size: 1.4em; font-weight:bold;">KeerthiWIKI</div>
+            <div style="font-size: 0.7em;">The Tech Encyclopedia</div>
+        </div>
+        <strong>Contents</strong>
+        <a href="#about">Overview</a>
+        <a href="#early-life">Early Life</a>
+        <a href="#experience">Career</a>
+        <a href="#projects">Systems & Projects</a>
+        <a href="#experiments">Experiments Namespace</a>
+        <a href="#awards">Competitions & CTFs</a>
+        <a href="#gallery">Media</a>
+        <a href="#terminal">KeerthiOS</a>
+        <a href="#revisions">Revision History</a>
+    </div>
+
+    <!-- MAIN ARTICLE CONTENT -->
+    <div class="content clearfix">
+        <h1>Keerthi K P</h1>
+        
+        <!-- MAIN PROFILE INFOBOX -->
+        <table class="infobox">
+            <tr><th colspan="2">Keerthi K P</th></tr>
+            <tr><td colspan="2" style="text-align:center;"><img src="C:\Users\Keerthi\Downloads\1772973201056.jpg" alt="Keerthi K P" style="max-width:100%; height:auto;"></td></tr>
+            <tr><th scope="row">Born</th><td>22 April 2006 (age 20)</td></tr>
+            <tr><th scope="row">Hometown</th><td>Chennai, India</td></tr>
+            <tr><th scope="row">Education</th><td>R.M.D. Engineering College (Current)</td></tr>
+            <tr><th scope="row">Fields</th><td><a href="#cyber">Cybersecurity</a>, <a href="#ai">AI Architecture</a></td></tr>
+            <tr><th scope="row">Known for</th><td>YapFormer, PhishMate AI</td></tr>
+            <tr><th scope="row">GitHub</th><td><a href="https://github.com/keerthiparam">@keerthiparam</a></td></tr>
+            <tr><th scope="row">LinkedIn</th><td><a href="https://linkedin.com/in/keerthiparam">in/keerthiparam</a></td></tr>
+        </table>
+
+        <!-- LEAD PARAGRAPH -->
+        <p id="about"><b>Keerthi K P</b> (born 22 April 2006) is an Indian cybersecurity researcher, full-stack developer, and competitive programmer. Currently pursuing a Bachelor of Engineering in Cybersecurity at R.M.D. Engineering College, her work focuses primarily on <b><a href="#osint">Open-Source Intelligence (OSINT)</a></b>, AI-powered security infrastructure, and decentralized web protocols.</p>
+        
+        <div style="background-color: #f8f9fa; border-left: 4px solid #0645ad; padding: 10px 15px; margin: 15px 0;">
+            <strong>Current Research Focus (May 2026):</strong>
+            <ul style="margin: 5px 0 0 0; padding-left: 20px;">
+                <li>Scalable backend architectures and decentralized database synchronization (<a href="#crdt">CRDTs</a>).</li>
+                <li>Local deployment of Transformer/NLP models under constrained compute environments.</li>
+                <li>Threat Intelligence and Advanced Persistent Threat (APT) analysis.</li>
+            </ul>
+        </div>
+
+        <!-- TABLE OF CONTENTS -->
+        <div class="toc">
+            <div class="toc-title">Contents</div>
+            <ul>
+                <li><a href="#early-life">1 Early life and education</a></li>
+                <li><a href="#experience">2 Career and experience</a></li>
+                <li><a href="#projects">3 Systems & Projects</a></li>
+                <li><a href="#experiments">4 Experiments Namespace</a></li>
+                <li><a href="#awards">5 Competitions & CTFs</a></li>
+                <li><a href="#gallery">6 Media & Certificates</a></li>
+                <li><a href="#terminal">7 KeerthiOS</a></li>
+                <li><a href="#revisions">8 Revision History</a></li>
+            </ul>
+        </div>
+
+        <!-- EARLY LIFE -->
+        <h2 id="early-life">Early life and education</h2>
+        <p>Keerthi attended Velammal Vidyalaya for her Higher Secondary education, completing the PCM (Physics, Chemistry, Mathematics) stream with Computer Science. Instructors noted a highly specialized academic profile, characterized by top-tier performances in logical architecture (Computer Science) and linguistic communication (English), contrasted with routine challenges in core sciences like Chemistry.</p>
+        <p>She is currently enrolled at R.M.D. Engineering College, maintaining an <b>8.62 CGPA</b>. Certifications include NPTEL Gold and Silver medals, OCP Java SE 17, and Ethical Hacking Essentials (EHE).</p>
+
+        <!-- CAREER -->
+        <h2 id="experience">Career and experience</h2>
+        <div class="thumb tright">
+            <div class="thumbinner" style="width:340px;">
+                <video class="thumbvideo" width="340" controls muted autoplay loop>
+                    <source src="https://github.com/user-attachments/assets/059bb3ae-5fbe-45ca-9285-b32162fb9bce" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="thumbcaption"><b>Video 1:</b> UFFT Dashboard.</div>
+            </div>
+        </div>
+        <p>Between December 2024 and February 2025, Keerthi deployed as a Python Intern at Infosys Springboard, serving as <b>Scrum Master</b> for a 25-developer cohort building a <i>Unified Family Finance Tracker</i>.</p>
+        
+        <table class="wikitable" style="width: 50%; float: left; margin-right: 20px;">
+            <tr><th colspan="2">Infosys Project Parameters</th></tr>
+            <tr><td><b>Role</b></td><td>Scrum Master / PM</td></tr>
+            <tr><td><b>Team Size</b></td><td>25 Developers</td></tr>
+            <tr><td><b>Duration</b></td><td>4 Agile Sprints</td></tr>
+            <tr><td><b>Resolution</b></td><td>Successful Delivery</td></tr>
+        </table>
+        
+        <p>During Sprint 3, an unannounced database schema alteration by an external module team caused a cascading codebase failure prior to a mentor demonstration. Keerthi orchestrated the crisis response, directing codebase restorations, resolving git conflicts, and restructuring the cross-module schema integration to meet the delivery deadline.</p>
+        <div class="clearfix"></div>
+
+        <!-- PROJECTS / SYSTEMS -->
+        <h2 id="projects">Systems & Technical Documentation</h2>
+
+        <!-- YAPFORMER -->
+        <h3 id="yapformer">YapFormer</h3>
+        <div class="article-metadata">Last Updated: Dec 2025 | Category: AI Architecture | Status: Completed | <b><a href="https://lnkd.in/gjupXRci">Documentation</a></b></div>
+        
+        <div class="thumb tright">
+            <div class="thumbinner" style="width:250px;">
+                <img src="YOUR_YAPFORMER_UI_IMAGE.jpg" class="thumbimage" alt="YapFormer UI">
+                <div class="thumbcaption"><b>Figure 2:</b> Terminal-based UI architecture.</div>
+            </div>
+        </div>
+
+        <p>YapFormer is a sophisticated transformer model engineered entirely from scratch, bypassing standard high-level libraries. Co-developed with Shri Sai Aravind R, it secured 1st Place as the "Build From Scratch Champion" at the RootSprout hackathon.</p>
+        
+        <details>
+            <summary>▼ Model Architecture & Constraints</summary>
+            <p>Designed to operate under strict compute limitations, the model utilizes a custom multi-head attention mechanism. It was trained exclusively on the <i>TinyStories</i> dataset to demonstrate that high-quality semantic generation is possible without massive parameter counts.</p>
+        </details>
+        <details>
+            <summary>▼ Interface & Optimization</summary>
+            <p>The frontend is a custom terminal-based UI developed independently by Keerthi, utilizing ASCII art rendering to visualize token generation in real-time. Optimization required managing memory leaks during the self-attention tensor calculations.</p>
+        </details>
+        <div class="clearfix"></div>
+
+        <!-- PHISHMATE -->
+        <h3 id="phishmate">PhishMate</h3>
+        <div class="article-metadata">Last Updated: Jun 2025 | Category: NLP Security | Status: Active | <b><a href="https://devpost.com/software/phishmate">Repository</a></b></div>
+        
+        <p>PhishMate is a local-analysis Chrome extension identifying malicious web infrastructure within email clients. Selected by Major League Hacking (MLH) for their global broadcast, it won the Security & Online Safety Track at AmpliCode.</p>
+        <p>The core engine relies on a local <a href="#bert">BERT</a> sequential model. Utilizing <a href="#nlp">Natural Language Processing</a>, it parses semantic context and grammatical anomalies in the DOM. By keeping NLP execution strictly local, the system ensures zero user-data transmission. Links are cross-referenced via API against the <a href="#abuseipdb">AbuseIPDB</a> registry.</p>
+
+        <!-- TIMECAPSULE -->
+        <h3 id="timecapsule">TimeCapsule</h3>
+        <div class="article-metadata">Last Updated: Jan 2026 | Category: Decentralized Systems | Status: Proof of Concept</div>
+        
+        <div class="thumb tright">
+            <div class="thumbinner" style="width:300px;">
+                <img src="https://raw.githubusercontent.com/keerthiparam/TimeCapsule/main/architecture.png" class="thumbimage" alt="TimeCapsule Architecture">
+                <div class="thumbcaption"><b>Figure 3:</b> IPFS Data Flow Diagram.</div>
+            </div>
+        </div>
+        <p>Engineered to circumvent internet censorship, TimeCapsule provides tamper-proof forensic web archiving.</p>
+        <details>
+            <summary>▼ Data Flow & Component Architecture</summary>
+            <ul>
+                <li><b>Ingestion:</b> Puppeteer executes a "forensic snapshot" of the target DOM, neutralizing external iframes.</li>
+                <li><b>Hashing:</b> Content is hashed via SHA-256.</li>
+                <li><b>Storage:</b> Uploaded to <a href="#ipfs">IPFS</a> via <code>@storacha/cli</code> to generate a Content Identifier (CID).</li>
+                <li><b>Ledgering:</b> <a href="#ots">OpenTimestamps</a> anchors the hash to the Bitcoin blockchain.</li>
+                <li><b>Database:</b> Metadata managed via Prisma ORM on PostgreSQL.</li>
+            </ul>
+        </details>
+        <div class="clearfix"></div>
+
+        <!-- EXPERIMENTS NAMESPACE -->
+        <h2 id="experiments">Experiments Namespace</h2>
+        <div class="hatnote">This section documents active research, unstructured tinkering, and failed technical hypotheses.</div>
+        <ul>
+            <li><b>Assembly Language Optimization:</b> Initial attempts at rewriting specific cryptographic hashing functions in x86 Assembly to benchmark performance against standard Python libraries.</li>
+            <li><b>Terminal Portfolios:</b> Iterations of command-line based web interfaces (See <i><a href="#terminal">KeerthiOS</a></i>).</li>
+            <li><b>Web3 & CRDTs:</b> Experimentation with Conflict-Free Replicated Data Types following local DevConnect sessions to understand Google Docs-style concurrency.</li>
+        </ul>
+
+        <!-- COMPETITIONS -->
+        <h2 id="awards">Competitions & CTFs</h2>
+        <p>Keerthi specializes in Threat Intelligence and <a href="#osint">OSINT</a>, currently ranked 87th globally in the World Wide CTF.</p>
+
+        <table class="wikitable">
+            <tr>
+                <th>Date</th>
+                <th>Event</th>
+                <th>Category</th>
+                <th>Result</th>
+                <th>Notes</th>
+            </tr>
+            <tr>
+                <td>Feb 2026</td>
+                <td>TCS CodeVita Season 13</td>
+                <td>Competitive Programming</td>
+                <td>Runner-Up</td>
+                <td>Featured in The Times of India. Sole female participant from Tamil Nadu.</td>
+            </tr>
+            <tr>
+                <td>Aug 2025</td>
+                <td>ExploitX Finals (CIT)</td>
+                <td>CTF (Offline)</td>
+                <td>First Blood</td>
+                <td>Team Yakuza. Sole team to solve the primary OSINT challenge. Ranked Top 7 in qualifiers.</td>
+            </tr>
+            <tr>
+                <td>Feb 2025</td>
+                <td>REVIL 2.0</td>
+                <td>Cryptography</td>
+                <td>1st Place</td>
+                <td>"Binary Breakout" escape room decryption challenge.</td>
+            </tr>
+            <tr>
+                <td>2026</td>
+                <td>ClawCTF (Rendezvous)</td>
+                <td>Event Organizer</td>
+                <td>60+ Registrations</td>
+                <td>Co-organized multi-domain CTF (AI, Forensics, Web Exploitation).</td>
+            </tr>
+        </table>
+
+        <!-- TERMINAL (KEERTHIOS) -->
+        <h2 id="terminal">KeerthiOS Subsystem</h2>
+        <div class="hatnote">Main article: KeerthiOS Command Line Interface</div>
+        <div style="background-color: #000; color: #0f0; padding: 15px; font-family: monospace; border-radius: 5px; margin-bottom: 20px;">
+            root@keerthios:~# ./execute_portfolio<br>
+            [ OK ] Booting KeerthiOS Kernel...<br>
+            [ OK ] Mounting virtual filesystem...<br>
+            <br>
+            KeerthiOS is a concurrent terminal-based portfolio project maintained separately. <br>
+            > <a href="YOUR_TERMINAL_PORTFOLIO_LINK" style="color: #0ff; text-decoration: underline;">Click here to initialize terminal environment.</a>
+        </div>
+
+        <!-- REVISION HISTORY -->
+        <h2 id="revisions">Revision History</h2>
+        <table class="wikitable" style="font-size: 0.85em;">
+            <tr>
+                <th style="width:10%">Version</th>
+                <th style="width:20%">Date</th>
+                <th>Changelog</th>
+            </tr>
+            <tr>
+                <td>v1.4</td>
+                <td>May 25, 2026</td>
+                <td>Restructured documentation to Wiki-format. Added TimeCapsule architecture docs. Integrated KeerthiOS link.</td>
+            </tr>
+            <tr>
+                <td>v1.3</td>
+                <td>Feb 18, 2026</td>
+                <td>Updated CodeVita national rankings and Times of India citations.</td>
+            </tr>
+            <tr>
+                <td>v1.2</td>
+                <td>Jan 2026</td>
+                <td>Committed TimeCapsule IPFS integration notes.</td>
+            </tr>
+            <tr>
+                <td>v1.1</td>
+                <td>Dec 2025</td>
+                <td>Added YapFormer transformer architecture breakdowns.</td>
+            </tr>
+            <tr>
+                <td>v1.0</td>
+                <td>Aug 2025</td>
+                <td>Initial release following ExploitX First Blood.</td>
+            </tr>
+        </table>
+
+        <!-- LINKS -->
+        <h2 id="links">External links</h2>
+        <ul>
+            <li><a href="https://github.com/keerthiparam">Keerthi K P on GitHub</a></li>
+            <li><a href="https://linkedin.com/in/keerthiparam">Keerthi K P on LinkedIn</a></li>
+            <li><a href="mailto:parami.keerthi@gmail.com">Contact via Email</a></li>
+        </ul>
+        <br><br><br>
+    </div>
+</div>
+
+</body>
+</html>
