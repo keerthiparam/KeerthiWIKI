@@ -1,141 +1,114 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Keerthi K P — a Wikipedia-inspired personal portfolio.">
-  <title>Keerthi K P — KeerthiWIKI</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeerthiWIKI</title>
+    <meta name="description" content="Keerthi K P is an Indian software developer, cybersecurity researcher and CTF competitor. KeerthiWIKI is her personal portfolio, written like an encyclopedia article.">
+    <script>
+        /* Apply the saved / system theme before first paint to avoid a flash */
+        (function () {
+            try {
+                var t = localStorage.getItem('theme');
+                if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+                document.documentElement.setAttribute('data-theme', t);
+            } catch (e) {}
+        })();
+    </script>
+    <link rel="icon" href="images/favicon.png">
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Keerthi K P – KeerthiWIKI">
+    <meta property="og:description" content="Keerthi K P is an Indian software developer, cybersecurity researcher and CTF competitor. KeerthiWIKI is her personal portfolio, written like an encyclopedia article.">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Keerthi K P",
+        "url": "https://keerthiparam.vercel.app",
+        "alumniOf": "R.M.D. Engineering College",
+        "sameAs": [
+            "https://github.com/keerthiparam",
+            "https://www.linkedin.com/in/keerthiparam",
+            "https://www.instagram.com/keerthiparam_",
+            "https://leetcode.com/u/keerthiparam/"
+        ]
+    }
+    </script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="#"><span class="brand-mark">K</span><span><strong id="site-name">KeerthiWIKI</strong><small id="site-tagline">The personal encyclopedia</small></span></a>
-    <div class="header-tools"><span>Personal encyclopedia</span><span class="tool-divider">|</span><a href="#external-links">External links</a></div>
-  </header>
-  <div class="page-shell">
-    <main class="article">
-      <div class="article-tabs"><span class="active-tab">Article</span><a href="#external-links">Read more</a><span class="article-tools">KeerthiWIKI</span></div>
-      <div class="title-row">
-        <button class="contents-trigger" id="toc-open" type="button" aria-label="Open contents" aria-expanded="true" title="Contents">☷</button>
-        <h1 id="article-title">Keerthi K P</h1>
-      </div>
-      <div class="subtitle">From KeerthiWIKI, the personal encyclopedia</div>
-      <nav class="toc-popover" id="toc-panel" aria-label="Contents">
-        <div class="toc-popover-head"><strong>Contents</strong><button id="toc-toggle" type="button" aria-expanded="true">hide</button></div>
-        <ol id="toc-list"></ol>
-      </nav>
-      <section id="overview">
-        <div class="infobox" id="infobox"></div>
-        <p id="lead"></p>
-      </section>
-      <nav class="toc" aria-label="Contents">
-        <div class="toc-title">Contents <button id="toc-toggle" type="button" aria-expanded="true">[hide]</button></div>
-        <ol id="toc-list"></ol>
-      </nav>
-      <div id="article-sections"></div>
-      <section id="medal-record">
-        <h2>Medal record</h2>
-        <div class="medal-wrap">
-          <table class="medal-table">
-            <thead><tr><th colspan="4" class="medal-heading">Medal record</th></tr><tr><th>Event</th><th class="gold-head">G</th><th class="silver-head">S</th><th class="bronze-head">B</th></tr></thead>
-            <tbody id="medal-body"></tbody>
-            <tfoot><tr><th colspan="4" class="medal-list-heading"><button id="medal-toggle" type="button" aria-expanded="true">Medal list [hide]</button></th></tr></tfoot>
-          </table>
-          <div id="medal-summary" class="medal-summary"></div>
+    <a class="skip-link" href="#content">Skip to content</a>
+
+    <!-- ===================== HEADER ===================== -->
+    <header class="vector-header">
+        <div class="header-start">
+            <button id="menuToggle" class="icon-btn" type="button" aria-label="Toggle contents sidebar" title="Toggle contents">
+                <svg viewBox="0 0 20 20" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M1 3h18v2H1zm0 6h18v2H1zm0 6h18v2H1z"/></svg>
+            </button>
+            <a class="logo" href="#firstHeading" aria-label="KeerthiWIKI – back to top">
+                <span class="logo-text">
+                    <span class="wordmark">Keerthi<span class="wiki">WIKI</span></span>
+                    <span class="tagline">The personal encyclopedia</span>
+                </span>
+            </a>
         </div>
-        <p class="small-note">Events are shown in reverse chronological order. The medal table includes podium finishes and wins; finalist positions and volunteering are listed separately.</p>
-      </section>
-      <section id="other-achievements"><h2>Other achievements and participation</h2><ul id="other-list"></ul></section>
-      <section id="certifications"><h2>Certifications and academic recognition</h2><ul id="cert-list"></ul><h3>NPTEL recognition</h3><ul id="nptel-list"></ul></section>
-      <section id="interests"><h2>Technical and personal interests</h2><p class="field-list" id="field-list"></p><p id="personal-interests"></p></section>
-      <section id="external-links"><h2>External links</h2><ul id="links-list"></ul></section>
-      <footer class="article-footer">This article is maintained as part of KeerthiWIKI. Images and supporting evidence are supplied by the portfolio owner. Last updated: <span id="last-updated"></span>.</footer>
-    </main>
-  </div>
-  <script>
-  const $ = (s, root=document) => root.querySelector(s);
-  const esc = (s="") => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-  const link = (url,label) => `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(label)}</a>`;
-  function figure(img, align="right") {
-    if (!img) return "";
-    const media = img.type === "video"
-      ? `<video controls preload="metadata" playsinline aria-label="${esc(img.alt || "Project video")}"><source src="${esc(img.src)}"><span>Your browser does not support HTML video.</span></video>`
-      : `<a href="${esc(img.src)}" target="_blank" rel="noopener"><img src="${esc(img.src)}" alt="${esc(img.alt || "")}" loading="lazy" onerror="this.closest('figure').classList.add('image-missing');this.style.display='none'"></a>`;
-    return `<figure class="thumb ${align === "left" ? "thumb-left" : "thumb-right"}">
-      ${media}
-      <figcaption>${esc(img.caption || "")}<span class="missing-hint">Media not available — check the URL in data.json.</span></figcaption>
-    </figure>`;
-  }
-  function paragraphs(items=[]) { return items.map(p=>`<p>${esc(p)}</p>`).join(""); }
-  function renderSection(s) {
-    let out = `<section id="${esc(s.id)}"><h2>${esc(s.title)}</h2>`;
-    if (s.images) s.images.forEach(i => out += figure(i, i.align));
-    if (s.paragraphs) out += paragraphs(s.paragraphs);
-    if (s.subsections) s.subsections.forEach(sub => {
-      out += `<div class="clearfix"><h3>${esc(sub.title)}</h3>`;
-      if (sub.images) sub.images.forEach(i => out += figure(i, i.align));
-      out += paragraphs(sub.paragraphs || []) + `</div>`;
-    });
-    if (s.items) s.items.forEach(item => {
-      const projectId = `project-${s.items.indexOf(item)}-${item.name.toLowerCase().replace(/[^a-z0-9]+/g,"-")}`;
-      out += `<div class="project-entry clearfix" id="${esc(projectId)}"><h3>${esc(item.name)}</h3>`;
-      if (item.image) out += figure(item.image, "right");
-      out += `<p>${esc(item.description)}</p><p class="role-line"><b>Contribution:</b> ${esc(item.role)}</p>`;
-      if (item.link) out += `<p class="project-link">${link(item.link, "Project / repository")}</p>`;
-      out += `</div>`;
-    });
-    out += `<div class="clearfix"></div></section>`;
-    return out;
-  }
-  async function init() {
-    try {
-      const response = await fetch("data.json");
-      if (!response.ok) throw new Error("Could not load data.json");
-      const d = await response.json();
-      $("#site-name").textContent = d.site.name;
-      $("#site-tagline").textContent = d.site.tagline;
-      $("#article-title").textContent = d.site.articleTitle;
-      $("#last-updated").textContent = d.site.lastUpdated;
-      $("#lead").textContent = d.lead;
-      const p = d.person;
-      $("#infobox").innerHTML = `<div class="infobox-title">${esc(p.name)}</div>
-        <div class="infobox-photo"><img src="${esc(p.photo.src)}" alt="${esc(p.photo.alt)}" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="missing-hint">Add your portrait at ${esc(p.photo.src)}</span><div class="caption">${esc(p.photo.caption)}</div></div>
-        <table>${[
-          ["Born",p.born],["Hometown",p.hometown],["Nationality",p.nationality],["Education",p.education],["Degree",p.degree],["Specialization",p.specialization],["Honors",p.honors],["Graduation",p.graduation],["CGPA",p.cgpa],["Fields",p.fields.join(", ")]
-        ].map(([k,v])=>`<tr><th>${esc(k)}</th><td>${esc(v)}</td></tr>`).join("")}</table>`;
-      $("#article-sections").innerHTML = d.sections.map(renderSection).join("");
-      const tocRows = d.sections.map((s,i) => {
-        let nested = "";
-        if (s.subsections?.length) nested = `<ol>${s.subsections.map(sub=>`<li><a href="#${esc(s.id)}">${esc(sub.title)}</a></li>`).join("")}</ol>`;
-        if (s.items?.length) nested = `<ol>${s.items.map((item,j)=>`<li><a href="#project-${j}-${esc(item.name.toLowerCase().replace(/[^a-z0-9]+/g,"-"))}">${esc(item.name)}</a></li>`).join("")}</ol>`;
-        return `<li><a href="#${esc(s.id)}">${esc(s.title)}</a>${nested}</li>`;
-      }).join("");
-      $("#toc-list").innerHTML = `<li class="toc-top"><a href="#overview">(Top)</a></li>${tocRows}
-        <li><a href="#medal-record">Medal record</a></li>
-        <li><a href="#other-achievements">Other achievements and participation</a></li>
-        <li><a href="#certifications">Certifications and academic recognition</a></li>
-        <li><a href="#interests">Technical and personal interests</a></li>
-        <li><a href="#external-links">External links</a></li>`;
-      const medals = [...d.medals].sort((a,b)=>b.sort.localeCompare(a.sort));
-      $("#medal-body").innerHTML = medals.map(m=>`<tr><td><span class="medal-date">${esc(m.date)}</span><br>${esc(m.event)}</td><td class="gold-cell">${m.gold || "–"}</td><td class="silver-cell">${m.silver || "–"}</td><td class="bronze-cell">${m.bronze || "–"}</td></tr>`).join("");
-      const totals = medals.reduce((a,m)=>({gold:a.gold+m.gold,silver:a.silver+m.silver,bronze:a.bronze+m.bronze}),{gold:0,silver:0,bronze:0});
-      $("#medal-summary").innerHTML = `<div><b>Gold</b><span>${totals.gold}</span></div><div><b>Silver</b><span>${totals.silver}</span></div><div><b>Bronze</b><span>${totals.bronze}</span></div>`;
-      $("#other-list").innerHTML = d.otherAchievements.map(a=>`<li><b>${esc(a.title)}:</b> ${esc(a.detail)}</li>`).join("");
-      $("#cert-list").innerHTML = d.certifications.map(x=>`<li>${esc(x)}</li>`).join("");
-      $("#nptel-list").innerHTML = d.nptel.map(x=>`<li>${esc(x)}</li>`).join("");
-      $("#field-list").textContent = d.interests.join(" · ");
-      $("#personal-interests").textContent = "Outside technology, she enjoys playing " + d.personalInterests.join(", ") + ".";
-      $("#links-list").innerHTML = d.externalLinks.map(x=>`<li>${link(x.url,x.label)}</li>`).join("");
-      const tocPanel = $("#toc-panel"), tocOpen = $("#toc-open");
-      $("#toc-toggle").addEventListener("click", () => { tocPanel.classList.remove("is-open"); tocOpen.setAttribute("aria-expanded","false"); });
-      tocOpen.addEventListener("click", () => { const open = !tocPanel.classList.contains("is-open"); tocPanel.classList.toggle("is-open",open); tocOpen.setAttribute("aria-expanded",String(open)); });
-      $("#toc-list").addEventListener("click", e => { if (e.target.closest("a")) { tocPanel.classList.remove("is-open"); tocOpen.setAttribute("aria-expanded","false"); } });
-      $("#medal-toggle").addEventListener("click", e=>{const summary=$("#medal-summary");const hidden=summary.hidden=!summary.hidden;e.currentTarget.textContent=hidden?"Medal list [show]":"Medal list [hide]";e.currentTarget.setAttribute("aria-expanded",String(!hidden));});
-    } catch (err) {
-      document.querySelector(".article").insertAdjacentHTML("beforeend", `<p class="load-error">Unable to load data.json. Run this site through a local web server and keep index.html, style.css and data.json in the same folder. Details: ${esc(err.message)}</p>`);
-    }
-  }
-  init();
-  </script>
+
+        <form id="searchForm" class="header-search" role="search" autocomplete="off">
+            <div class="search-box">
+                <svg class="search-icon" viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12.2 13.6a7 7 0 1 1 1.4-1.4l5.4 5.4-1.4 1.4zM3 8a5 5 0 1 0 10 0A5 5 0 0 0 3 8z"/></svg>
+                <input id="searchInput" type="search" placeholder="Search KeerthiWIKI" aria-label="Search KeerthiWIKI" aria-controls="searchResults" aria-expanded="false" spellcheck="false">
+                <kbd class="search-hint" aria-hidden="true">/</kbd>
+            </div>
+            <button class="search-button" type="submit">Search</button>
+            <ul id="searchResults" class="search-results" role="listbox" hidden></ul>
+        </form>
+
+        <div class="header-end">
+            <button id="themeToggle" class="icon-btn" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+                <svg class="icon-moon" viewBox="0 0 20 20" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M10 2a8 8 0 1 0 8 8 6 6 0 0 1-8-8z"/></svg>
+                <svg class="icon-sun" viewBox="0 0 20 20" width="20" height="20" aria-hidden="true"><circle cx="10" cy="10" r="3.6" fill="currentColor"/><path stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M10 1.5v2M10 16.5v2M1.5 10h2M16.5 10h2M4 4l1.4 1.4M14.6 14.6 16 16M4 16l1.4-1.4M14.6 5.4 16 4"/></svg>
+            </button>
+        </div>
+    </header>
+
+    <div id="sidebarOverlay" class="sidebar-overlay"></div>
+
+    <div class="page">
+
+        <!-- ===================== TABLE OF CONTENTS ===================== -->
+        <aside id="sidebar" class="vector-toc" aria-label="Table of contents">
+            <nav>
+                <div class="toc-title">Contents</div>
+                <ul id="toc-list" class="toc-list"></ul>
+            </nav>
+        </aside>
+
+        <!-- ===================== ARTICLE ===================== -->
+        <main id="content" class="mw-content" tabindex="-1">
+
+            <h1 id="firstHeading" class="firstHeading">Keerthi K P</h1>
+            <div id="siteSub" class="site-sub">From KeerthiWIKI, the personal encyclopedia</div>
+
+            <div id="bodyContent" class="mw-body-content">
+                <noscript><p>KeerthiWIKI needs JavaScript to load its article content.</p></noscript>
+                <p id="loadingMsg" class="loading">Loading…</p>
+            </div>
+
+            <footer class="mw-footer">
+                <p id="footerEdited"></p>
+                <p>KeerthiWIKI is a personal portfolio styled after an encyclopedia, made as an easier-to-navigate companion to her terminal-based portfolio, <a href="https://keerthios.vercel.app/" target="_blank" rel="noopener noreferrer">KeerthiOS</a>. It is an independent project and is not affiliated with Wikipedia or the Wikimedia Foundation.</p>
+            </footer>
+        </main>
+    </div>
+
+    <!-- Image lightbox -->
+    <div id="lightbox" class="lightbox" hidden role="dialog" aria-modal="true" aria-label="Image viewer">
+        <figure>
+            <img id="lightboxImg" alt="">
+            <figcaption id="lightboxCaption"></figcaption>
+        </figure>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

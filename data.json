@@ -1,372 +1,293 @@
 {
-  "site": {
-    "name": "KeerthiWIKI",
-    "tagline": "The personal encyclopedia of Keerthi K P",
-    "articleTitle": "Keerthi K P",
-    "lastUpdated": "November 2026",
-    "language": "en"
-  },
-  "person": {
+  "lastEdited": "2026-11-03",
+  "infobox": {
     "name": "Keerthi K P",
-    "born": "22 April 2006",
-    "ageNote": "Age changes over time; omitted from the article",
-    "nationality": "Indian",
-    "hometown": "Chennai, Tamil Nadu, India",
-    "education": "R.M.D. Engineering College",
-    "degree": "B.E. Computer Science and Engineering",
-    "specialization": "Cybersecurity",
-    "honors": "Artificial Intelligence",
-    "graduation": "Expected May 2027",
-    "cgpa": "8.62/10",
-    "fields": [
-      "Computer science",
-      "Cybersecurity",
-      "Open-source intelligence",
-      "Digital forensics",
-      "Software development",
-      "Artificial intelligence"
-    ],
-    "knownFor": [
-      "PhishMate / PhishMateBERT",
-      "ViewLing",
-      "ParamStock",
-      "ClawCTF organization"
-    ],
-    "photo": {
-      "src": "images/keerthi-profile.jpg",
-      "alt": "Portrait of Keerthi K P",
-      "caption": "Keerthi K P"
-    }
+    "image": "images/profile.jpg",
+    "caption": "Software Developer and Cybersecurity enthusiast",
+    "rows": [
+      {
+        "header": "Personal information"
+      },
+      {
+        "label": "Born",
+        "value": "April 22, 2006",
+        "ageFrom": "2006-04-22"
+      },
+      {
+        "label": "Home town",
+        "value": "Chennai, Tamil Nadu, India"
+      },
+      {
+        "label": "Education",
+        "value": "B.E. Computer Science and Engineering<br>(Specialization: Cybersecurity; Honors: Artificial Intelligence),<br><a href='https://rmd.ac.in/' target='_blank'>R.M.D. Engineering College</a>"
+      },
+      {
+        "label": "Occupation",
+        "value": "Student"
+      },
+      {
+        "label": "Height",
+        "value": "5 ft 4 in (162 cm)"
+      },
+      {
+        "label": "Website",
+        "value": "<a href='https://keerthiparam.vercel.app' target='_blank'>keerthiparam.vercel.app</a>"
+      },
+      {
+        "label": "Résumé",
+        "value": "<a href='https://docs.google.com/document/d/1_8awqWlxdFw7RIELNcMUJ54haw1jOJGvTQTLFg4NBT8/export?format=pdf' target='_blank'>Download (PDF)</a>"
+      },
+      {
+        "label": "GitHub",
+        "value": "<a href='https://github.com/keerthiparam' target='_blank'>keerthiparam</a>"
+      },
+      {
+        "label": "LinkedIn",
+        "value": "<a href='https://www.linkedin.com/in/keerthiparam' target='_blank'>keerthiparam</a>"
+      }
+    ]
   },
-  "lead": "Keerthi K P (born 22 April 2006) is an Indian computer science student pursuing a Bachelor of Engineering in Computer Science and Engineering at R.M.D. Engineering College, Chennai. She specializes in Cybersecurity and is pursuing an honors track in Artificial Intelligence. Her interests include cybersecurity, open-source intelligence (OSINT), digital forensics, software development and artificial intelligence. She has participated in programming competitions, hackathons and cybersecurity events.",
+  "medals": [
+    {
+      "event": "CodeSapiens Summer Fest Portfolio Building Challenge",
+      "year": 2026,
+      "href": "#results-summary",
+      "g": 1,
+      "s": 0,
+      "b": 0
+    },
+    {
+      "event": "TCS CodeVita Season 13",
+      "year": 2026,
+      "href": "#results-summary",
+      "g": 0,
+      "s": 1,
+      "b": 0
+    },
+    {
+      "event": "Defy'26",
+      "year": 2026,
+      "href": "#results-summary",
+      "g": 0,
+      "s": 0,
+      "b": 1
+    },
+    {
+      "event": "RootSprout Build From Scratch",
+      "year": 2025,
+      "href": "#results-summary",
+      "g": 1,
+      "s": 0,
+      "b": 0
+    },
+    {
+      "event": "AmpliCode Hackathon",
+      "year": 2025,
+      "href": "#results-summary",
+      "g": 1,
+      "s": 0,
+      "b": 0
+    },
+    {
+      "event": "ExploitX CTF",
+      "year": 2025,
+      "href": "#results-summary",
+      "g": 0,
+      "s": 1,
+      "b": 0
+    },
+    {
+      "event": "Revil'25 Binary Breakout",
+      "year": 2025,
+      "href": "#results-summary",
+      "g": 1,
+      "s": 0,
+      "b": 0
+    },
+    {
+      "event": "SheBuilds Octocat Drawing Competition",
+      "year": 2024,
+      "href": "#results-summary",
+      "g": 0,
+      "s": 0,
+      "b": 1
+    },
+    {
+      "event": "Neo Codeathon",
+      "year": 2024,
+      "href": "#results-summary",
+      "g": 1,
+      "s": 0,
+      "b": 0
+    }
+  ],
+  "lead": "<p><b>Keerthi K P</b> (born April 22, 2006) is an Indian software developer, cybersecurity researcher, and Capture The Flag (CTF) competitor. She is currently pursuing a Bachelor of Engineering in Computer Science and Engineering with a specialization in Cybersecurity and Honors in Artificial Intelligence at <a href='https://rmd.ac.in/' target='_blank'>R.M.D. Engineering College</a>.</p><p>Keerthi has interned with the <a href='https://drive.google.com/file/d/1x56ARihnNU_A5YCGOydMnE3xHgvZFXND/view?usp=drivesdk' target='_blank'>Tamil Nadu Police Cyber Crime Wing</a>, where she helped streamline complex malware analysis tools for non-technical users. As a hackathon and CTF competitor, she was the runner-up in the <a href='https://drive.google.com/file/d/1dPl9viMqRkQIyPhmIbcaTboEI2PhmnxY/view?usp=sharing' target='_blank'>TCS CodeVita Season 13</a> Best Women Coder category{{ref:toi}} and has actively organized and placed in various cybersecurity competitions.</p>",
   "sections": [
     {
-      "id": "early-life",
+      "id": "early-life-and-education",
       "title": "Early life and education",
-      "paragraphs": [
-        "Keerthi was born on 22 April 2006 in Chennai, Tamil Nadu, India. She began her schooling at Ebenezer Marcus Matriculation School, where she studied from kindergarten, before attending Velammal Vidyalaya, Melayanambakkam, through Class XII.",
-        "Her early interest in technology developed through experimenting with computer settings and helping others troubleshoot technical problems. She was introduced to programming through turtle graphics during middle school, where she experimented with controlling on-screen movement through basic commands.",
-        "She later learned Microsoft Excel and studied Python as a major subject in higher secondary school. She completed Class XII in the Physics, Chemistry and Mathematics stream with Computer Science, graduating in May 2023 with 87%.",
-        "In August 2023, she enrolled at R.M.D. Engineering College to pursue a Bachelor of Engineering in Computer Science and Engineering, specializing in Cybersecurity with honors in Artificial Intelligence."
-      ],
-      "images": [
+      "content": "<p>Keerthi was introduced to computer science early in her schooling, developing an interest in technology by exploring basic system configurations and educational software. She completed her secondary school certificate (SSC) examinations with 92% and subsequently pursued the Physics, Chemistry, and Mathematics (PCM) track combined with Computer Science in higher secondary school (HSC) at Velammal Vidyalaya, completing it in May 2023 with 87%. For her HSC practicals, she built a <a href='https://github.com/keerthiparam/Password-Manager' target='_blank'>MySQL-backed command-line password manager</a>, which marked the beginning of her interest in cybersecurity.</p><p>She later enrolled at <a href='https://rmd.ac.in/' target='_blank'>R.M.D. Engineering College</a> in August 2023 to pursue a Bachelor of Engineering in Computer Science and Engineering. Her specialization is Cybersecurity, and she is also pursuing Honors in Artificial Intelligence. She is expected to graduate in 2027.</p>"
+    },
+    {
+      "id": "career",
+      "title": "Career",
+      "content": "",
+      "subsections": [
         {
-          "src": "images/education-school.jpg",
-          "alt": "School or education-related photograph",
-          "caption": "Velammal Vidyalaya, where Keerthi studied through Class XII.",
-          "align": "right"
+          "id": "tamil-nadu-police-cyber-crime-wing",
+          "title": "Tamil Nadu Police Cyber Crime Wing",
+          "content": "{{image:images/ccw.jpg|Tamil Nadu Police Cyber Crime Wing internship certificate|right|300}}<p>From June to July 2026, Keerthi interned at the <b><a href='https://drive.google.com/file/d/1x56ARihnNU_A5YCGOydMnE3xHgvZFXND/view?usp=drivesdk' target='_blank'>Tamil Nadu Police Cyber Crime Wing</a></b> in Ashok Nagar, Chennai, focusing on a <a href='https://github.com/rdxkeerthi/Malware-analysis-App-analysis-tool/tree/frontend' target='_blank'>malware analysis tool for Android APK files</a>. Commuting daily to Ashok Nagar between 11 AM and 5 PM using MTC buses and the Chennai Metro, she noted that navigating the city provided her with as much real-world learning as the internship itself. During her tenure, she redesigned the tool's frontend to improve usability for non-technical police personnel, simplifying complex malware analysis results into an intuitive interface to reduce information overload.</p><p>The tool is published in the repository as <b>AndroidSentinel</b>{{ref:androidsentinel}}, a full-stack platform for static and dynamic analysis of Android APK files, modeled on industry tools such as MobSF and Any.Run. Its frontend is a Next.js 14 application written in TypeScript with Tailwind CSS, with an upload page, a live analysis dashboard and a full report viewer, and it talks to a FastAPI backend over REST and WebSocket.</p><ul><li><b>Static analysis:</b> APK and DEX parsing with Androguard, YARA rule scanning, permission auditing, embedded URL extraction and optional MobSF integration</li><li><b>Dynamic analysis:</b> Frida instrumentation, ADB-based runtime monitoring on an Android emulator, filesystem snapshot comparison and network packet capture (PCAP)</li><li><b>Reporting:</b> threat scoring, verdict generation and downloadable PDF and JSON reports</li><li><b>Technologies:</b> Python, FastAPI, Next.js, TypeScript, Tailwind CSS, Frida, YARA, SQLite/PostgreSQL</li></ul>"
+        },
+        {
+          "id": "infosys-springboard",
+          "title": "Infosys Springboard",
+          "content": "{{image:images/infy.jpg|Infosys Springboard certificate of completion|right|300}}<p>From December 2024 to February 2025, Keerthi interned at <a href='https://infyspringboard.onwingspan.com/public-assets/infosysheadstart/cert/lex_auth_014255056970588160117/1-0aa02f87-d4b6-4f6f-b24b-a735e66cdf5f.pdf' target='_blank'>Infosys Springboard</a> as a Python Developer, where she contributed to an expense management and tracking module for the <a href='https://github.com/keerthiparam/Unified-Family-Finance-Tracker' target='_blank'>Unified Family Finance Tracker</a>. The platform supported 5 user profiles and more than 10 expense categories, and was built with Python, Flask and MySQL. In this role, she acted as a Project Manager for a 5-member team and a Scrum Master for a 25-member team to lead the agile delivery of the platform.</p>{{video:https://github.com/user-attachments/assets/059bb3ae-5fbe-45ca-9285-b32162fb9bce|Demonstration of the Unified Family Finance Tracker from Infosys Springboard.|left}}<ul><li><b>Project:</b> Unified Family Finance Tracker, an expense management and tracking platform for families</li><li><b>Scope:</b> 5 user profiles and more than 10 expense categories</li><li><b>Technologies:</b> Python, Flask, MySQL</li><li><b>Roles:</b> Project Manager (5-member team) and Scrum Master (25-member team)</li><li><b>Duration:</b> December 2024 to February 2025</li></ul>"
         }
       ]
     },
     {
-      "id": "career",
-      "title": "Career and experience",
+      "id": "competitions-and-hackathons",
+      "title": "Competitions and hackathons",
+      "content": "<p>Keerthi has an extensive background in hackathons and Capture The Flag (CTF) events, accumulating over INR 50,000 in prize winnings across various competitions.</p>",
       "subsections": [
         {
-          "title": "Infosys Springboard",
-          "paragraphs": [
-            "Between December 2024 and February 2025, Keerthi worked as a Python intern at Infosys Springboard, contributing to the Unified Family Finance Tracker.",
-            "The project was a full-stack budgeting platform supporting multiple user profiles and expense categories. She contributed to the expense management module and served as Scrum Master and Product Manager, coordinating project delivery, team activities and module integration."
-          ],
-          "images": [
-            {
-              "src": "https://github.com/user-attachments/assets/059bb3ae-5fbe-45ca-9285-b32162fb9bce",
-              "alt": "Screenshot or photograph documenting Keerthi's role in the Infosys Springboard project",
-              "caption": "Evidence of Keerthi's contribution and project responsibilities in the Unified Family Finance Tracker.",
-              "align": "right"
-            }
-          ]
+          "id": "hackathons-and-coding-contests",
+          "title": "Hackathons and coding contests",
+          "content": "{{image:images/codevita.jpg|TCS CodeVita Season 13|right|300}}<p>Keerthi has secured multiple podium finishes. In May 2026, she won the Portfolio Building Challenge at CodeSapiens Summer Fest. Also in 2026, she was named the Best Women Coder Runner-up at <a href='https://drive.google.com/file/d/1dPl9viMqRkQIyPhmIbcaTboEI2PhmnxY/view?usp=sharing' target='_blank'>TCS CodeVita Season 13</a>, an achievement highlighted in the <i>Times of India</i>{{ref:toi}}. In December 2025, she won the RootSprout Build From Scratch event with <a href='#yapformer'>Yapformer</a>. She also placed as the Second Runner-up at Defy'26 with a 5-member team for the project <a href='#timecapsule'>TimeCapsule</a>.</p>{{image:images/neo.jpg|Neo Codeathon|left|220}}<p>In 2025, she won the AmpliCode Hackathon in a 2-member team with Aravind, where they first presented <a href='#phishmate'>PhishMate</a>, and in August 2024 she won the <a href='https://drive.google.com/file/d/12MwTKBbe_4kmrqt2VuL5EApU46_d5j9Y/view?usp=sharing' target='_blank'>Neo Codeathon</a>.</p>"
         },
         {
-          "title": "Tamil Nadu Police Cyber Crime Wing",
-          "paragraphs": [
-            "From June to July 2026, Keerthi worked with the Tamil Nadu Police Cyber Crime Wing on an Android APK malware analysis tool.",
-            "Her contribution focused on frontend development. She redesigned the interface to improve usability and accessibility for non-technical users and simplified the presentation of malware analysis results."
-          ],
-          "images": [
-            {
-              "src": "images/cybercrime-work.jpg",
-              "alt": "Screenshot documenting frontend work on the Android APK malware analysis tool",
-              "caption": "Interface work on the Android APK malware analysis tool.",
-              "align": "left"
-            }
-          ]
+          "id": "capture-the-flag",
+          "title": "Capture The Flag",
+          "content": "{{image:images/clawctf.jpg|ClawCTF at Rendezvous 2k26|right|300}}<p>In 2026, Keerthi took on a leadership role as an Organizer for <a href='https://github.com/Joshni86/ClawCTF' target='_blank'>ClawCTF</a> at Rendezvous 2k26, successfully conducting a multi-domain CTF with over 60 registrations. The event's public repository organizes its challenges into 7 categories: AI, Cryptography, Forensics, Miscellaneous, OSINT, Reverse Engineering and Web. It also holds the event's rules document and promotional posters.</p>{{image:images/exploitx.jpg|ExploitX CTF at CIT Chennai|left|260}}<p>Her CTF journey gained momentum during her second year, when she competed in the <a href='https://drive.google.com/file/d/1BRGjBNiNK0VKNGBf8aDVWQbWKBNT_bKC/view?usp=drive_link' target='_blank'>ExploitX CTF</a> at CIT Chennai as part of team <b>Yakuza</b> with her teammate <a href='https://github.com/joshni86' target='_blank'>Joshni</a>. The team ranked 7th in the qualifiers and emerged as top performers in the finals.</p><p>In March 2025, she won the Binary Breakout event at <a href='https://drive.google.com/file/d/1jQEMGqeFeG3EbwBQaB1rxaNGno9XPGwc/view?usp=drive_link' target='_blank'>ReVil'25</a> as part of a 4-member team.</p>"
+        },
+        {
+          "id": "writing-and-video-competitions",
+          "title": "Writing, video and drawing competitions",
+          "content": "{{image:images/shebuilds.jpg|SheBuilds Octocat Drawing Competition|right|300}}<p>Beyond technical events, Keerthi has won a writing competition held by her college's language club and a short video-making competition held by its eco club. In December 2024, she was also the second runner-up in the Octocat Drawing Competition at <a href='https://drive.google.com/file/d/1jPWZLCIpcsCJgIFlMsm_6J9MViN4bpCn/view?usp=drive_link' target='_blank'>SheBuilds</a>.</p>"
+        },
+        {
+          "id": "results-summary",
+          "title": "Results summary",
+          "content": "<div class='table-wrap'><table class='wikitable'><thead><tr><th>Date</th><th>Event</th><th>Result</th><th>Notes</th></tr></thead><tbody><tr><td>Recent</td><td>Quiz competition at a meetup</td><td>Winner</td><td>Individual</td></tr><tr><td>May 2026</td><td>CodeSapiens Summer Fest, Portfolio Building Challenge</td><td>Winner</td><td>Individual</td></tr><tr><td>Feb 2026</td><td><a href='https://drive.google.com/file/d/1dPl9viMqRkQIyPhmIbcaTboEI2PhmnxY/view?usp=sharing' target='_blank'>TCS CodeVita Season 13</a></td><td>Best Women Coder runner-up</td><td>Reported by the <i>Times of India</i>{{ref:toi}}</td></tr><tr><td>Feb 2026</td><td><a href='https://github.com/Joshni86/ClawCTF' target='_blank'>ClawCTF</a>, Rendezvous 2k26</td><td>Organizer</td><td>Multi-domain CTF with 60+ registrations</td></tr><tr><td>Jan 2026</td><td>Defy'26</td><td>Second runner-up</td><td>5-member team; presented <a href='#timecapsule'>TimeCapsule</a></td></tr><tr><td>Dec 2025</td><td>RootSprout Build From Scratch</td><td>Winner</td><td>Submitted <a href='#yapformer'>Yapformer</a></td></tr><tr><td>Jun 2025</td><td>AmpliCode Hackathon</td><td>Winner</td><td>2-member team with Aravind; presented <a href='#phishmate'>PhishMate</a></td></tr><tr><td>2025</td><td><a href='https://drive.google.com/file/d/1BRGjBNiNK0VKNGBf8aDVWQbWKBNT_bKC/view?usp=drive_link' target='_blank'>ExploitX CTF</a></td><td>Finalist</td><td>Team Yakuza (with <a href='https://github.com/joshni86' target='_blank'>Joshni</a>); ranked 7th in the qualifiers; held at CIT Chennai</td></tr><tr><td>Mar 2025</td><td><a href='https://drive.google.com/file/d/1jQEMGqeFeG3EbwBQaB1rxaNGno9XPGwc/view?usp=drive_link' target='_blank'>ReVil'25 Binary Breakout</a></td><td>Winner</td><td>Team of 4</td></tr><tr><td>Dec 2024</td><td><a href='https://drive.google.com/file/d/1jPWZLCIpcsCJgIFlMsm_6J9MViN4bpCn/view?usp=drive_link' target='_blank'>SheBuilds Octocat Drawing Competition</a></td><td>Second runner-up</td><td>Individual</td></tr><tr><td>Aug 2024</td><td><a href='https://drive.google.com/file/d/12MwTKBbe_4kmrqt2VuL5EApU46_d5j9Y/view?usp=sharing' target='_blank'>Neo Codeathon</a></td><td>Winner</td><td>Hosted by R.M.K. Group of Institutions</td></tr></tbody></table></div>"
         }
       ]
     },
     {
       "id": "projects",
       "title": "Projects",
-      "items": [
+      "content": "<p>Keerthi has developed several notable projects, many of which can be found on her <a href='https://github.com/keerthiparam' target='_blank'>GitHub profile</a>{{ref:github}}.</p>",
+      "subsections": [
         {
-          "name": "ViewLing",
-          "description": "An individual project to visualize exported WhatsApp conversations and present chat data in a more accessible visual form. The project is being developed for personal family use.",
-          "role": "Individual developer",
-          "image": {
-            "src": "images/viewling.jpg",
-            "alt": "ViewLing application screenshot",
-            "caption": "ViewLing, a WhatsApp export visualizer."
-          },
-          "link": "https://github.com/keerthiparam"
+          "id": "viewling",
+          "title": "ViewLing",
+          "content": "<p><b><a href='https://github.com/keerthiparam/ViewLing' target='_blank'>ViewLing</a></b>{{ref:viewling}}, requested by her father, is an ongoing web application designed to visualize exported WhatsApp messages. According to its to-do list, the app already supports multiple chat files, message dates, a light and dark theme toggle, messages to yourself, clickable links, PDF attachments, drag-and-drop uploads, colored senders in group chats, and closing a chat with the <kbd>Esc</kbd> key.</p><ul><li><b>Implemented:</b> multiple file support, date support, theme toggle, link support, PDF files, drag and drop, group chat colors</li><li><b>Planned:</b> message search, edited, deleted, pinned and forwarded messages, formatted text, more media types (audio, GIF, PowerPoint, Excel, contact cards), live location, sticky dates, reduced lag on long chats and wider device support</li></ul>"
         },
         {
-          "name": "PhishMate / PhishMateBERT",
-          "description": "A phishing-detection browser extension initiated as PhishMate during FOSS Hack 2025 and later developed into PhishMateBERT. The later iteration uses a DeBERTa-based classification approach.",
-          "role": "Project developer",
-          "image": {
-            "src": "https://github.com/user-attachments/assets/b57aeccb-8807-46a8-b8cd-6ac134825d86",
-            "alt": "PhishMate or PhishMateBERT screenshot",
-            "caption": "PhishMate and its subsequent iteration, PhishMateBERT."
-          },
-          "link": "https://devpost.com/software/phishmate"
+          "id": "timecapsule",
+          "title": "TimeCapsule",
+          "content": "{{video:https://github.com/user-attachments/assets/82693a46-e0b0-4533-bd7b-625afaf00082|TimeCapsule decentralized archive.|right}}<p><b><a href='https://github.com/keerthiparam/timecapsule' target='_blank'>TimeCapsule</a></b>{{ref:timecapsule}} was inspired by a petition to save the centralized Wayback Machine from being shut down over copyright disputes. Keerthi created a tamper-proof, decentralized internet archive using SHA-256, OpenTimestamps, and IPFS to ensure web history cannot be easily erased or censored. Its repository describes it as a decentralized digital notary for the web, built by Team Web Wizards.</p><p>The project targets 3 weaknesses of the web: link rot, takedowns of centralized archives, and content that is quietly edited or faked with screenshots. A server-side browser captures a forensic snapshot of a page, the content is uploaded to IPFS, and its SHA-256 hash is anchored to the Bitcoin blockchain through OpenTimestamps. Anyone can verify a capture by downloading the evidence file and its <code>.ots</code> proof and checking them at OpenTimestamps.org.</p><ul><li><b>Features:</b> forensic web capture (HTML, metadata and screenshots via Puppeteer), drag-and-drop file timestamping, Bitcoin-anchored <code>.ots</code> receipts, MetaMask sign-in, public and private vaults, and PDF chain-of-custody reports</li><li><b>Technologies:</b> SHA-256, OpenTimestamps, IPFS, Next.js 15, Tailwind CSS, Supabase, PostgreSQL (Prisma), Puppeteer</li><li><b>Recognition:</b> Second runner-up, Defy'26 (January 2026), as a 5-member team</li></ul>"
         },
         {
-          "name": "ParamStock",
-          "description": "An individual stock-monitoring and notification project. It uses Yahoo Finance data and Twilio to send stock alerts through WhatsApp, with Flask as the application backend.",
-          "role": "Individual developer",
-          "image": {
-            "src": "images/paramstock.jpg",
-            "alt": "ParamStock dashboard or WhatsApp alert screenshot",
-            "caption": "ParamStock stock-monitoring and WhatsApp alert interface."
-          },
-          "link": "https://github.com/keerthiparam"
+          "id": "yapformer",
+          "title": "Yapformer",
+          "content": "{{video:https://github.com/user-attachments/assets/4f6f1d3b-4388-4657-a99c-e4b7251e04f8|Yapformer demonstration.|left}}<p><b><a href='https://github.com/Aravind-808/YapFormer' target='_blank'>YapFormer</a></b>{{ref:yapformer}} is a GPT-style transformer language model built from scratch in Python and PyTorch. Keerthi built the <b>command-line user interface</b> used to interact with the model; the model itself, including its architecture and training, is the work of the repository's author, Shri Sai Aravind. It was submitted to the RootSprout Build From Scratch event in December 2025, where it won.</p><p>For context, the underlying model has about 56 million parameters and was trained for 15,000 steps (roughly 4.5 hours) on the TinyStories dataset, using techniques such as rotary embeddings, grouped query attention, key–value caching, RMSNorm and SwiGLU layers. Despite its small size, it produces short stories of surprisingly high quality.</p><ul><li><b>Keerthi's role:</b> command-line user interface</li><li><b>Model technologies:</b> Python, PyTorch, Hugging Face (datasets and tokenization)</li></ul>"
         },
         {
-          "name": "TimeCapsule",
-          "description": "A decentralized internet archival project designed to preserve web content with verifiable integrity, using SHA-256 hashing, IPFS and OpenTimestamps. The project received second runner-up recognition at Defy'26.",
-          "role": "Team project",
-          "image": {
-            "src": "https://github.com/user-attachments/assets/82693a46-e0b0-4533-bd7b-625afaf00082",
-            "alt": "TimeCapsule project architecture or demonstration",
-            "caption": "TimeCapsule project architecture or demonstration."
-          },
-          "link": "https://github.com/keerthiparam"
+          "id": "paramstock",
+          "title": "ParamStock",
+          "content": "<p><b><a href='https://github.com/keerthiparam/ParamStock' target='_blank'>ParamStock</a></b>, developed at the request of her father, is an ongoing project: a real-time stock monitoring and WhatsApp alert system built using Flask and Twilio, currently tracking more than 10 stocks.</p>"
         },
         {
-          "name": "Dust Buster",
-          "description": "A hardware prototype developed by a four-member team for the Science Day Project Expo at R.M.D. Engineering College. It uses an Arduino Uno and an ultrasonic distance sensor to detect dust or particles inside a chalk box and trigger an alert. The project was a finalist at the expo and was framed around UN Sustainable Development Goal 9.",
-          "role": "Team project",
-          "image": {
-            "src": "images/dust-buster.jpg",
-            "alt": "Dust Buster Arduino hardware prototype",
-            "caption": "Dust Buster hardware prototype. Project documentation supplied by Keerthi."
-          },
-          "link": "https://github.com/keerthiparam/Dust-Buster"
+          "id": "keerthios",
+          "title": "KeerthiOS",
+          "content": "<p><b><a href='https://keerthios.vercel.app/' target='_blank'>KeerthiOS</a></b>{{ref:keerthios}} is Keerthi's earlier, terminal-based portfolio website, first published in May 2025 and built with HTML, CSS and JavaScript. Because non-technical visitors can find a terminal interface hard to navigate, she later created KeerthiWIKI, the encyclopedia-style site you are reading now, as an easier-to-browse version of the same portfolio.</p>"
         },
         {
-          "name": "YapFormer",
-          "description": "A team project involving a transformer-based language model built from scratch. Keerthi contributed to the console interface and terminal-based user experience; she did not develop the model architecture.",
-          "role": "Team project; console UI contribution",
-          "image": {
-            "src": "https://github.com/user-attachments/assets/4f6f1d3b-4388-4657-a99c-e4b7251e04f8",
-            "alt": "YapFormer console interface screenshot",
-            "caption": "Console interface contribution to YapFormer."
-          },
-          "link": "https://github.com/keerthiparam"
+          "id": "phishmate",
+          "title": "PhishMate",
+          "content": "{{video:https://github.com/user-attachments/assets/b57aeccb-8807-46a8-b8cd-6ac134825d86|PhishMate extension demonstration.|left}}<p><b><a href='https://github.com/keerthiparam/PhishMate' target='_blank'>PhishMate</a></b>{{ref:phishmate}} was initially built during an early hackathon with <a href='https://github.com/Aravind-808' target='_blank'>Shri Sai Aravind</a>, combining Aravind's focus on AI with Keerthi's focus on cybersecurity. The AI-powered browser extension detects phishing attempts with about 90% accuracy using fully local analysis. It later evolved into <b><a href='https://github.com/keerthiparam/PhishMateBERT' target='_blank'>PhishMateBERT</a></b>{{ref:phishmatebert}} as her honors capstone project.</p><p>PhishMate checks emails in real time inside Chromium-based browsers. A custom-trained BERT model analyzes the email text for common red flags such as urgency, poor grammar and requests for personal information, while the links in the message are extracted and their IP addresses are checked against AbuseIPDB as a second layer of defense. The model was trained on about 8,000 emails and reached roughly 90% accuracy on its test set. Because the model runs on a local Flask API, email content never leaves the user's device, and only IP addresses are sent for the reputation check.</p><p>PhishMateBERT replaces the AbuseIPDB link check with a fine-tuned DeBERTa classifier and removes the need for any third-party threat-intelligence service or API key. It serves predictions from a local API at <code>127.0.0.1</code>, shows email and detection counters in a light or dark popup, and its manifest covers Gmail, Outlook, Yahoo Mail, Proton Mail, Zoho Mail, iCloud Mail, AOL Mail, GMX Mail and Yandex Mail.</p><ul><li><b>Technologies:</b> HTML, CSS, JavaScript, Python, Flask</li><li><b>Evaluation:</b> about 90% accuracy on its test set of roughly 8,000 emails, with fully local analysis</li><li><b>Roadmap:</b> Firefox support, a more robust model trained on a larger dataset, and additional sources for checking malicious links</li><li><b>Recognition:</b> Winner, AmpliCode Hackathon (June 2025), as a 2-member team with Aravind</li></ul>"
+        },
+        {
+          "id": "password-manager",
+          "title": "Password Manager",
+          "content": "<p><b><a href='https://github.com/keerthiparam/Password-Manager' target='_blank'>Password Manager</a></b>{{ref:passwordmanager}} is the MySQL-backed, terminal-based tool she built for her HSC practicals. It lets a user store, view and manage login credentials (username, password and website) through a numbered text menu, and was designed as a beginner-level project to demonstrate database handling and basic CRUD operations. Its repository notes that it is a learning project and should not be used to store real passwords without encryption.</p><ul><li><b>Features:</b> add credentials, list all entries, search by username, delete a specific entry, clear the whole database, and handle invalid input</li><li><b>Technologies:</b> Python 3, MySQL Connector for Python, MySQL</li><li><b>Schema:</b> a single <code>password_manager</code> table with username, password and website columns</li></ul>"
         }
       ]
     },
     {
-      "id": "leadership",
-      "title": "Leadership and event organization",
-      "paragraphs": [
-        "Keerthi served as lead organizer of ClawCTF, a cybersecurity competition held as part of Rendezvous 2k26, the Computer Science and Engineering symposium at R.M.D. Engineering College.",
-        "Her responsibilities included event management and the creation of OSINT challenges. The event covered multiple cybersecurity domains and received more than 60 registrations."
-      ],
-      "images": [
+      "id": "skills-and-certifications",
+      "title": "Skills and certifications",
+      "content": "",
+      "subsections": [
         {
-          "src": "images/clawctf.jpg",
-          "alt": "ClawCTF event photograph, organizer screenshot or challenge material",
-          "caption": "ClawCTF at Rendezvous 2k26. Add an event photograph or evidence of the organizer role.",
-          "align": "right"
+          "id": "technical-skills",
+          "title": "Technical skills",
+          "content": "<ul><li><b>Languages:</b> Python, Java, C, C++</li><li><b>Frameworks and libraries:</b> Flask, Selenium</li><li><b>Databases:</b> MySQL</li><li><b>Tools and platforms:</b> Git, GitHub, Linux, VS Code, Wireshark, Nmap, Nginx, Postman, Ollama</li><li><b>Interests:</b> cybersecurity, forensics, OSINT, CTFs</li></ul>"
+        },
+        {
+          "id": "certifications",
+          "title": "Certifications",
+          "content": "<div class='table-wrap'><table class='wikitable'><thead><tr><th>Certification</th><th>Issuer</th><th>Date</th><th>Credential</th></tr></thead><tbody><tr><td>Artificial Intelligence Essentials (AIE)</td><td>EC-Council</td><td>Oct 2026</td><td><a href='https://drive.google.com/file/d/115aPcGriRGPCdVyvRl8RVLMWPqW568S1/view?usp=sharing' target='_blank'>View</a></td></tr><tr><td>Oracle Certified Professional, Java SE 17 (OCP)</td><td>Oracle</td><td>Mar 2026</td><td><a href='https://catalog-education.oracle.com/pls/certview/sharebadge?id=501C69A33126075D33B832C40356B94CE2B2B0CD9B13BA609B932A521B93CBF1' target='_blank'>View</a></td></tr><tr><td>Ethical Hacking Essentials (EHE)</td><td>EC-Council</td><td>Jul 2025</td><td><a href='https://www.coursera.org/account/accomplishments/verify/C37GZDLLXUSE?utm_source=link&amp;utm_medium=certificate&amp;utm_content=cert_image&amp;utm_campaign=sharing_cta&amp;utm_product=course' target='_blank'>View</a></td></tr><tr><td>Beginning C++ Programming - From Beginner to Beyond</td><td>Udemy</td><td>Jan 2024</td><td><a href='https://www.udemy.com/certificate/UC-90cd77b0-221b-43c1-b77b-8055f82b327f/' target='_blank'>View</a></td></tr></tbody></table></div>"
+        },
+        {
+          "id": "academic-recognition",
+          "title": "Academic recognition",
+          "content": "<p>Keerthi scored <a href='https://drive.google.com/file/d/1CHmAJRUcGYz-WirHIWGCqMyzMz5tT_dT/view?usp=drivesdk' target='_blank'>620 out of 677</a> on the TOEFL ITP in March 2026, placing her at CEFR level C1 (Proficient). Her NPTEL results are listed below.</p><div class='table-wrap'><table class='wikitable'><thead><tr><th>NPTEL course</th><th>Result</th></tr></thead><tbody><tr><td><a href='https://archive.nptel.ac.in/certificate.php?cert_num=NOC26MG72S58570522604232090' target='_blank'>Principles of Management</a></td><td>Silver</td></tr><tr><td><a href='https://archive.nptel.ac.in/content/noc/NOC25/SEM2/Ecertificates/106/noc25-cs145/Course/NPTEL25CS145S53330590709164249.pdf' target='_blank'>Database Management Systems</a></td><td>Elite</td></tr><tr><td><a href='https://archive.nptel.ac.in/content/noc/NOC25/SEM1/Ecertificates/106/noc25-cs59/Course/NPTEL25CS59S34330643201209773.pdf' target='_blank'>Data Structures and Algorithms using Python</a></td><td>Silver</td></tr><tr><td><a href='https://archive.nptel.ac.in/content/noc/NOC24/SEM2/Ecertificates/106/noc24-cs105/Course/NPTEL24CS105S55630559003850868.pdf' target='_blank'>Programming in Java</a></td><td>Elite</td></tr><tr><td><a href='https://archive.nptel.ac.in/content/noc/NOC24/SEM1/Ecertificates/109/noc24-hs26/Course/NPTEL24HS26S85350369930351609.pdf' target='_blank'>Enhancing Soft Skills and Personality</a></td><td>Top 1% + Gold</td></tr></tbody></table></div><p>She also shares study material on <a href='https://www.studocu.com/in/user/keerthi-kp/50296445' target='_blank'>Studocu</a>, where her profile shows an impact score of 405+.</p>"
         }
       ]
+    },
+    {
+      "id": "personal-life",
+      "title": "Personal life",
+      "content": "<p>Outside of her professional and academic pursuits, Keerthi tries to do 1 <a href='https://leetcode.com/u/keerthiparam/' target='_blank'>LeetCode</a> a day to \"keep her reasoning in play\". She is actively looking to enter the field of bug bounty.</p><p>Keerthi considers herself a person with a lot of hobbies, from drawing, painting, writing and origami to photography, video editing, reading, movies and music. She also enjoys badminton, Genshin Impact, Skribbl and Minecraft, and is fond of stickers.</p>"
+    },
+    {
+      "id": "external-links",
+      "title": "External links",
+      "afterReferences": true,
+      "content": "<ul><li>GitHub: <a href='https://github.com/keerthiparam' target='_blank'>keerthiparam</a></li><li>LinkedIn: <a href='https://www.linkedin.com/in/keerthiparam' target='_blank'>keerthiparam</a></li><li>Instagram: <a href='https://www.instagram.com/keerthiparam_' target='_blank'>keerthiparam_</a></li><li>LeetCode: <a href='https://leetcode.com/u/keerthiparam/' target='_blank'>keerthiparam</a></li><li>Studocu: <a href='https://www.studocu.com/in/user/keerthi-kp/50296445' target='_blank'>keerthi-kp</a></li><li>Résumé: <a href='https://docs.google.com/document/d/1_8awqWlxdFw7RIELNcMUJ54haw1jOJGvTQTLFg4NBT8/export?format=pdf' target='_blank'>PDF</a></li><li>Portfolio: <a href='https://keerthiparam.vercel.app/' target='_blank'>keerthiparam.vercel.app</a></li><li>Terminal portfolio (KeerthiOS): <a href='https://keerthios.vercel.app/' target='_blank'>keerthios.vercel.app</a></li></ul>"
     }
   ],
-  "medals": [
+  "references": [
     {
-      "date": "February 2026",
-      "sort": "2026-02",
-      "event": "TCS CodeVita Season XIII — Best Women Coders",
-      "gold": 0,
-      "silver": 1,
-      "bronze": 0
+      "id": "toi",
+      "html": "<a href='https://timesofindia.indiatimes.com/city/chennai/city-coders-shine-at-tcs-codevita/articleshow/129230607.cms' target='_blank'>“City coders shine at TCS CodeVita”</a>. <i>The Times of India</i>."
     },
     {
-      "date": "January 2026",
-      "sort": "2026-01",
-      "event": "Defy'26 — TimeCapsule",
-      "gold": 0,
-      "silver": 0,
-      "bronze": 1
+      "id": "github",
+      "html": "<a href='https://github.com/keerthiparam' target='_blank'>“keerthiparam”</a>. <i>GitHub</i>."
     },
     {
-      "date": "December 2025",
-      "sort": "2025-12",
-      "event": "RootSprout Build From Scratch",
-      "gold": 1,
-      "silver": 0,
-      "bronze": 0
+      "id": "phishmate",
+      "html": "<a href='https://github.com/keerthiparam/PhishMate' target='_blank'>“keerthiparam/PhishMate”</a>. <i>GitHub</i>."
     },
     {
-      "date": "June 2025",
-      "sort": "2025-06",
-      "event": "AmpliCode Hackathon — Security and Online Safety",
-      "gold": 1,
-      "silver": 0,
-      "bronze": 0
+      "id": "phishmatebert",
+      "html": "<a href='https://github.com/keerthiparam/PhishMateBERT' target='_blank'>“keerthiparam/PhishMateBERT”</a>. <i>GitHub</i>."
     },
     {
-      "date": "February 2025 (confirm)",
-      "sort": "2025-02",
-      "event": "REVIL 2.0 — Binary Breakout, Chennai Institute of Technology",
-      "gold": 1,
-      "silver": 0,
-      "bronze": 0
+      "id": "timecapsule",
+      "html": "<a href='https://github.com/keerthiparam/timecapsule' target='_blank'>“keerthiparam/timecapsule”</a>. <i>GitHub</i>."
     },
     {
-      "date": "2024 (month to confirm)",
-      "sort": "2024-12",
-      "event": "SheBuilds — Draw the GitHub Octocat Challenge",
-      "gold": 0,
-      "silver": 0,
-      "bronze": 1
+      "id": "yapformer",
+      "html": "<a href='https://github.com/Aravind-808/YapFormer' target='_blank'>“Aravind-808/YapFormer”</a>. <i>GitHub</i>."
     },
     {
-      "date": "August 2024",
-      "sort": "2024-08",
-      "event": "Neo Codeathon — R.M.K. Group of Institutions",
-      "gold": 1,
-      "silver": 0,
-      "bronze": 0
+      "id": "androidsentinel",
+      "html": "<a href='https://github.com/rdxkeerthi/Malware-analysis-App-analysis-tool/tree/frontend' target='_blank'>“rdxkeerthi/Malware-analysis-App-analysis-tool”</a>. <i>GitHub</i>."
     },
     {
-      "date": "2023",
-      "sort": "2023-12",
-      "event": "Eco Club Short Video Making Competition — RMDEC",
-      "gold": 1,
-      "silver": 0,
-      "bronze": 0
+      "id": "passwordmanager",
+      "html": "<a href='https://github.com/keerthiparam/Password-Manager' target='_blank'>“keerthiparam/Password-Manager”</a>. <i>GitHub</i>."
     },
     {
-      "date": "Date not specified",
-      "sort": "0000-00",
-      "event": "MLH × Sapiens Campus × OS Community Chennai Meetup — Individual Quiz",
-      "gold": 1,
-      "silver": 0,
-      "bronze": 0
-    }
-  ],
-  "otherAchievements": [
-    {
-      "title": "ExploitX — Chennai Institute of Technology",
-      "detail": "Team Yakuza placed seventh in the preliminaries and among the top five best performers in the finals."
+      "id": "viewling",
+      "html": "<a href='https://github.com/keerthiparam/ViewLing' target='_blank'>“keerthiparam/ViewLing”</a>. <i>GitHub</i>."
     },
     {
-      "title": "MLH × Sapiens Campus × OS Community Chennai Meetup",
-      "detail": "Individual quiz competition winner."
-    },
-    {
-      "title": "R.M.D. Engineering College Project Expo 2024",
-      "detail": "Finalist with the Dust Buster team."
-    },
-    {
-      "title": "Women's Day 2024 — RMDEC",
-      "detail": "Volunteer."
-    },
-    {
-      "title": "Language Club Writing Competition — RMDEC",
-      "detail": "Recognition in a writing competition on a pollution-related topic; exact award and title to be confirmed."
-    }
-  ],
-  "certifications": [
-    "Artificial Intelligence Essentials (AIE), October 2026",
-    "Oracle Certified Professional (OCP), Java SE 17, March 2026",
-    "Ethical Hacking Essentials (EHE), July 2025",
-    "C++ Programming, Udemy, January 2024",
-    "TOEFL ITP: 620/677, CEFR C1 Proficient, March 2026"
-  ],
-  "nptel": [
-    "Top 1% and Gold — Soft Skills",
-    "Silver — Principles of Management",
-    "Silver — Data Structures and Algorithms using Python",
-    "Elite — Database Management Systems",
-    "Elite — Programming in Java"
-  ],
-  "interests": [
-    "Cybersecurity",
-    "Open-source intelligence (OSINT)",
-    "Digital forensics",
-    "Software development",
-    "Artificial intelligence and machine learning"
-  ],
-  "personalInterests": [
-    "Genshin Impact",
-    "Minecraft",
-    "Skribbl"
-  ],
-  "externalLinks": [
-    {
-      "label": "GitHub",
-      "url": "https://github.com/keerthiparam"
-    },
-    {
-      "label": "LinkedIn",
-      "url": "https://linkedin.com/in/keerthiparam"
-    },
-    {
-      "label": "LeetCode",
-      "url": "https://leetcode.com/u/keerthiparam/"
-    },
-    {
-      "label": "Current portfolio — KeerthiOS",
-      "url": "https://keerthiparam.vercel.app/"
-    }
-  ],
-  "imageInstructions": [
-    {
-      "file": "images/keerthi-profile.jpg",
-      "use": "Portrait for the infobox."
-    },
-    {
-      "file": "images/infosys-role.jpg",
-      "use": "Screenshot, certificate, project board or event photo that documents your Infosys team role."
-    },
-    {
-      "file": "images/cybercrime-work.jpg",
-      "use": "Screenshot of the frontend work you are allowed to show; remove confidential or sensitive information."
-    },
-    {
-      "file": "images/viewling.jpg",
-      "use": "ViewLing screenshots."
-    },
-    {
-      "file": "images/phishmate.jpg",
-      "use": "PhishMate / PhishMateBERT screenshots."
-    },
-    {
-      "file": "images/paramstock.jpg",
-      "use": "ParamStock dashboard or WhatsApp alert screenshots; hide phone numbers and private data."
-    },
-    {
-      "file": "images/timecapsule.jpg",
-      "use": "TimeCapsule architecture or demo screenshots."
-    },
-    {
-      "file": "images/dust-buster.jpg",
-      "use": "Dust Buster hardware photographs; the uploaded PDF contains suitable prototype images."
-    },
-    {
-      "file": "images/yapformer.jpg",
-      "use": "YapFormer console UI screenshot showing your contribution."
-    },
-    {
-      "file": "images/clawctf.jpg",
-      "use": "ClawCTF event photo, organizer evidence or OSINT challenge screenshot."
-    },
-    {
-      "file": "images/awards/",
-      "use": "Create this folder for award photographs and certificates; add image entries to the relevant section in data.json when ready."
+      "id": "keerthios",
+      "html": "<a href='https://github.com/keerthiparam/keerthiOS' target='_blank'>“keerthiparam/keerthiOS”</a>. <i>GitHub</i>."
     }
   ]
 }
