@@ -614,3 +614,15 @@ body.viewer-open { overflow: hidden; }
 .wikitable { font-size: .8rem; min-width: 0; line-height: 1.35; }
 .wikitable th, .wikitable td { padding: .15em .5em; }
 .wikitable td:first-child { white-space: nowrap; }
+/* ---------- Mobile tables: stack each row as a card instead of squeezing columns ---------- */
+@media (max-width: 720px) {
+    .table-wrap { overflow-x: visible; }
+    .wikitable { display: block; width: 100%; border: 0; background: transparent; }
+    .wikitable thead { display: none; }
+    .wikitable tbody { display: block; }
+    .wikitable tr { display: block; margin: 0 0 .7rem; border: 1px solid var(--border); background: var(--bg-soft); }
+    .wikitable td { display: flex; gap: .6rem; border: 0; border-bottom: 1px solid var(--border-soft); padding: .3em .6em; white-space: normal !important; overflow-wrap: anywhere; }
+    .wikitable td:last-child { border-bottom: 0; }
+    .wikitable td::before { content: attr(data-label); flex: 0 0 5.5rem; font-weight: 700; color: var(--muted); }
+    .wikitable td:first-child { background: var(--table-head); font-weight: 600; }
+}

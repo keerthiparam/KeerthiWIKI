@@ -213,6 +213,12 @@
             const f = im.closest('figure'); if (f) f.remove();
         }, { once: true }));
 
+        /* ----- label table cells so tables can stack on narrow screens ----- */
+        $$('table.wikitable').forEach((t) => {
+            const heads = $$('thead th', t).map((th) => th.textContent.trim());
+            $$('tbody tr', t).forEach((tr) => $$('td', tr).forEach((td, i) => { if (heads[i]) td.setAttribute('data-label', heads[i]); }));
+        });
+
         /* ----- external links open safely in new tab ----- */
         $$('a[target="_blank"]').forEach((a) => { a.rel = 'noopener noreferrer'; });
 
