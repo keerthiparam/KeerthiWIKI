@@ -4,6 +4,7 @@
 
 /* ---------- 1. Theme tokens ---------- */
 :root {
+    --visited: #6b4ba1;
     --bg: #ffffff;
     --bg-soft: #f8f9fa;
     --bg-hover: #eaecf0;
@@ -31,6 +32,7 @@
 }
 
 :root[data-theme="dark"] {
+    --visited: #b79ae0;
     --bg: #101418;
     --bg-soft: #1b1f23;
     --bg-hover: #2a2f35;
@@ -626,3 +628,5 @@ body.viewer-open { overflow: hidden; }
     .wikitable td::before { content: attr(data-label); flex: 0 0 5.5rem; font-weight: 700; color: var(--muted); }
     .wikitable td:first-child { background: var(--table-head); font-weight: 600; }
 }
+/* ---------- Visited links ---------- */
+.mw-body-content a:visited, .infobox a:visited, .mw-footer a:visited, sup.reference a:visited { color: var(--visited); }

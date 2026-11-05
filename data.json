@@ -1,5 +1,5 @@
 {
-  "lastEdited": "2026-11-04",
+  "lastEdited": "2026-11-05",
   "infobox": {
     "name": "Keerthi K P",
     "image": "images/profile.jpg",
@@ -200,7 +200,7 @@
         {
           "id": "keerthios",
           "title": "KeerthiOS",
-          "content": "<p><b><a href='https://keerthios.vercel.app/' target='_blank'>KeerthiOS</a></b>{{ref:keerthios}} is Keerthi's earlier, terminal-based portfolio website, first published in May 2025 and built with HTML, CSS and JavaScript. Because non-technical visitors can find a terminal interface hard to navigate, she later created KeerthiWIKI, the encyclopedia-style site you are reading now, as an easier-to-browse version of the same portfolio.</p>"
+          "content": "<p><b><a href='https://keerthios.vercel.app/' target='_blank'>KeerthiOS</a></b> is Keerthi's earlier, terminal-based portfolio website, first published in May 2025 and built with HTML, CSS and JavaScript. Because non-technical visitors can find a terminal interface hard to navigate, she later created KeerthiWIKI, the encyclopedia-style site you are reading now, as an easier-to-browse version of the same portfolio.</p>"
         },
         {
           "id": "phishmate",
@@ -284,10 +284,6 @@
     {
       "id": "viewling",
       "html": "<a href='https://github.com/keerthiparam/ViewLing' target='_blank'>“keerthiparam/ViewLing”</a>. <i>GitHub</i>."
-    },
-    {
-      "id": "keerthios",
-      "html": "<a href='https://github.com/keerthiparam/keerthiOS' target='_blank'>“keerthiparam/keerthiOS”</a>. <i>GitHub</i>."
     }
   ]
 }
