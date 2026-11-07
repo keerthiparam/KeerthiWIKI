@@ -1,5 +1,5 @@
 {
-  "lastEdited": "2026-11-05",
+  "lastEdited": "2026-11-07",
   "infobox": {
     "name": "Keerthi K P",
     "image": "images/profile.jpg",
@@ -49,6 +49,14 @@
   },
   "medals": [
     {
+      "event": "MLH × OS Community × Sapiens Campus Hacktoberfest Meetup Fun Quiz",
+      "year": 2026,
+      "href": "#results-summary",
+      "g": 0,
+      "s": 1,
+      "b": 0
+    },
+    {
       "event": "CodeSapiens Summer Fest Portfolio Building Challenge",
       "year": 2026,
       "href": "#results-summary",
@@ -89,14 +97,6 @@
       "b": 0
     },
     {
-      "event": "ExploitX CTF",
-      "year": 2025,
-      "href": "#results-summary",
-      "g": 0,
-      "s": 1,
-      "b": 0
-    },
-    {
       "event": "Revil'25 Binary Breakout",
       "year": 2025,
       "href": "#results-summary",
@@ -123,6 +123,11 @@
   ],
   "lead": "<p><b>Keerthi K P</b> (born April 22, 2006) is an Indian software developer, cybersecurity researcher, and Capture The Flag (CTF) competitor. She is currently pursuing a Bachelor of Engineering in Computer Science and Engineering with a specialization in Cybersecurity and Honors in Artificial Intelligence at <a href='https://rmd.ac.in/' target='_blank'>R.M.D. Engineering College</a>.</p><p>Keerthi has interned with the <a href='https://drive.google.com/file/d/1x56ARihnNU_A5YCGOydMnE3xHgvZFXND/view?usp=drivesdk' target='_blank'>Tamil Nadu Police Cyber Crime Wing</a>, where she helped streamline complex malware analysis tools for non-technical users. As a hackathon and CTF competitor, she was the runner-up in the <a href='https://drive.google.com/file/d/1dPl9viMqRkQIyPhmIbcaTboEI2PhmnxY/view?usp=sharing' target='_blank'>TCS CodeVita Season 13</a> Best Women Coder category{{ref:toi}} and has actively organized and placed in various cybersecurity competitions.</p>",
   "sections": [
+    {
+      "id": "terminology",
+      "title": "Terminology",
+      "content": "<p>Some of the technical terms on this page may be unfamiliar, so here is a short guide.</p><ul><li><b>Capture The Flag (CTF):</b> a cybersecurity competition built around simulated attacks and challenges. Participants solve them to earn points and climb the leaderboard.</li><li><b>Hackathon:</b> a technical competition, typically lasting around 24 hours, in which teams build something to solve a problem.</li><li><b>Open-source intelligence (OSINT):</b> a cybersecurity term for finding out a name, place, animal, thing or other detail using only publicly available information. It is considered beginner friendly, and many people do it without even realising.</li></ul>"
+    },
     {
       "id": "early-life-and-education",
       "title": "Early life and education",
@@ -153,12 +158,12 @@
         {
           "id": "hackathons-and-coding-contests",
           "title": "Hackathons and coding contests",
-          "content": "{{image:images/codevita.jpg|TCS CodeVita Season 13|right|300}}<p>Keerthi has secured multiple podium finishes. In May 2026, she won the Portfolio Building Challenge at CodeSapiens Summer Fest. Also in 2026, she was named the Best Women Coder Runner-up at <a href='https://drive.google.com/file/d/1dPl9viMqRkQIyPhmIbcaTboEI2PhmnxY/view?usp=sharing' target='_blank'>TCS CodeVita Season 13</a>, an achievement highlighted in the <i>Times of India</i>{{ref:toi}}. In December 2025, she won the RootSprout Build From Scratch event with <a href='#yapformer'>Yapformer</a>. She also placed as the Second Runner-up at Defy'26 with a 5-member team for the project <a href='#timecapsule'>TimeCapsule</a>.</p>{{image:images/neo.jpg|Neo Codeathon|left|220}}<p>In 2025, she won the AmpliCode Hackathon in a 2-member team with Aravind, where they first presented <a href='#phishmate'>PhishMate</a>, and in August 2024 she won the <a href='https://drive.google.com/file/d/12MwTKBbe_4kmrqt2VuL5EApU46_d5j9Y/view?usp=sharing' target='_blank'>Neo Codeathon</a>.</p>"
+          "content": "{{image:images/codevita.jpg|TCS CodeVita Season 13|right|300}}<p>Keerthi has secured multiple podium finishes. In October 2026, she was the runner-up in the Fun Quiz at the Major League Hacking × OS Community × Sapiens Campus Hacktoberfest Meetup. In May 2026, she won the Portfolio Building Challenge at CodeSapiens Summer Fest. Also in 2026, she was named the Best Women Coder Runner-up at <a href='https://drive.google.com/file/d/1dPl9viMqRkQIyPhmIbcaTboEI2PhmnxY/view?usp=sharing' target='_blank'>TCS CodeVita Season 13</a>, an achievement highlighted in the <i>Times of India</i>{{ref:toi}}. In December 2025, she won the RootSprout Build From Scratch event with <a href='#yapformer'>Yapformer</a>. She also placed as the Second Runner-up at Defy'26 with a 5-member team for the project <a href='#timecapsule'>TimeCapsule</a>.</p>{{image:images/neo.jpg|Neo Codeathon|left|220}}<p>In 2025, she won the AmpliCode Hackathon in a 2-member team with Aravind, where they first presented <a href='#phishmate'>PhishMate</a>, and in August 2024 she won the <a href='https://drive.google.com/file/d/12MwTKBbe_4kmrqt2VuL5EApU46_d5j9Y/view?usp=sharing' target='_blank'>Neo Codeathon</a>.</p>"
         },
         {
           "id": "capture-the-flag",
           "title": "Capture The Flag",
-          "content": "{{image:images/clawctf.jpg|ClawCTF at Rendezvous 2k26|right|300}}<p>In 2026, Keerthi took on a leadership role as an Organizer for <a href='https://github.com/Joshni86/ClawCTF' target='_blank'>ClawCTF</a> at Rendezvous 2k26, successfully conducting a multi-domain CTF with over 60 registrations. The event's public repository organizes its challenges into 7 categories: AI, Cryptography, Forensics, Miscellaneous, OSINT, Reverse Engineering and Web. It also holds the event's rules document and promotional posters.</p>{{image:images/exploitx.jpg|ExploitX CTF at CIT Chennai|left|260}}<p>Her CTF journey gained momentum during her second year, when she competed in the <a href='https://drive.google.com/file/d/1BRGjBNiNK0VKNGBf8aDVWQbWKBNT_bKC/view?usp=drive_link' target='_blank'>ExploitX CTF</a> at CIT Chennai as part of team <b>Yakuza</b> with her teammate <a href='https://github.com/joshni86' target='_blank'>Joshni</a>. The team ranked 7th in the qualifiers and emerged as top performers in the finals.</p><p>In March 2025, she won the Binary Breakout event at <a href='https://drive.google.com/file/d/1jQEMGqeFeG3EbwBQaB1rxaNGno9XPGwc/view?usp=drive_link' target='_blank'>ReVil'25</a> as part of a 4-member team.</p>"
+          "content": "{{image:images/clawctf.jpg|ClawCTF at Rendezvous 2k26|right|300}}<p>In 2026, Keerthi took on a leadership role as an Organizer for <a href='https://github.com/Joshni86/ClawCTF' target='_blank'>ClawCTF</a> at Rendezvous 2k26, successfully conducting a multi-domain CTF with over 60 registrations. The event's public repository organizes its challenges into 7 categories: AI, Cryptography, Forensics, Miscellaneous, OSINT, Reverse Engineering and Web. It also holds the event's rules document and promotional posters.</p>{{image:images/exploitx.jpg|ExploitX CTF at CIT Chennai|left|260}}<p>Her CTF journey gained momentum during her second year, when in August 2025 she competed in the <a href='https://drive.google.com/file/d/1BRGjBNiNK0VKNGBf8aDVWQbWKBNT_bKC/view?usp=drive_link' target='_blank'>ExploitX CTF</a> at CIT Chennai as part of team <b>Yakuza</b> with her teammate <a href='https://github.com/joshni86' target='_blank'>Joshni</a>. The team ranked 7th in the qualifiers and emerged as top performers in the finals.</p><p>In March 2025, she won the Binary Breakout event at <a href='https://drive.google.com/file/d/1jQEMGqeFeG3EbwBQaB1rxaNGno9XPGwc/view?usp=drive_link' target='_blank'>ReVil'25</a> as part of a 4-member team.</p>"
         },
         {
           "id": "writing-and-video-competitions",
@@ -168,7 +173,7 @@
         {
           "id": "results-summary",
           "title": "Results summary",
-          "content": "<div class='table-wrap'><table class='wikitable'><thead><tr><th>Date</th><th>Event</th><th>Result</th><th>Notes</th></tr></thead><tbody><tr><td>Recent</td><td>Quiz competition at a meetup</td><td>Winner</td><td>Individual</td></tr><tr><td>May 2026</td><td>CodeSapiens Summer Fest, Portfolio Building Challenge</td><td>Winner</td><td>Individual</td></tr><tr><td>Feb 2026</td><td><a href='https://drive.google.com/file/d/1dPl9viMqRkQIyPhmIbcaTboEI2PhmnxY/view?usp=sharing' target='_blank'>TCS CodeVita Season 13</a></td><td>Best Women Coder runner-up</td><td>Reported by the <i>Times of India</i>{{ref:toi}}</td></tr><tr><td>Feb 2026</td><td><a href='https://github.com/Joshni86/ClawCTF' target='_blank'>ClawCTF</a>, Rendezvous 2k26</td><td>Organizer</td><td>Multi-domain CTF with 60+ registrations</td></tr><tr><td>Jan 2026</td><td>Defy'26</td><td>Second runner-up</td><td>5-member team; presented <a href='#timecapsule'>TimeCapsule</a></td></tr><tr><td>Dec 2025</td><td>RootSprout Build From Scratch</td><td>Winner</td><td>Submitted <a href='#yapformer'>Yapformer</a></td></tr><tr><td>Jun 2025</td><td>AmpliCode Hackathon</td><td>Winner</td><td>2-member team with Aravind; presented <a href='#phishmate'>PhishMate</a></td></tr><tr><td>2025</td><td><a href='https://drive.google.com/file/d/1BRGjBNiNK0VKNGBf8aDVWQbWKBNT_bKC/view?usp=drive_link' target='_blank'>ExploitX CTF</a></td><td>Finalist</td><td>Team Yakuza (with <a href='https://github.com/joshni86' target='_blank'>Joshni</a>); ranked 7th in the qualifiers; held at CIT Chennai</td></tr><tr><td>Mar 2025</td><td><a href='https://drive.google.com/file/d/1jQEMGqeFeG3EbwBQaB1rxaNGno9XPGwc/view?usp=drive_link' target='_blank'>ReVil'25 Binary Breakout</a></td><td>Winner</td><td>Team of 4</td></tr><tr><td>Dec 2024</td><td><a href='https://drive.google.com/file/d/1jPWZLCIpcsCJgIFlMsm_6J9MViN4bpCn/view?usp=drive_link' target='_blank'>SheBuilds Octocat Drawing Competition</a></td><td>Second runner-up</td><td>Individual</td></tr><tr><td>Aug 2024</td><td><a href='https://drive.google.com/file/d/12MwTKBbe_4kmrqt2VuL5EApU46_d5j9Y/view?usp=sharing' target='_blank'>Neo Codeathon</a></td><td>Winner</td><td>Hosted by R.M.K. Group of Institutions</td></tr></tbody></table></div>"
+          "content": "<div class='table-wrap'><table class='wikitable'><thead><tr><th>Date</th><th>Event</th><th>Result</th><th>Notes</th></tr></thead><tbody><tr><td>Oct 2026</td><td>Major League Hacking × OS Community × Sapiens Campus Hacktoberfest Meetup, Fun Quiz</td><td>Runner-up</td><td>Individual</td></tr><tr><td>May 2026</td><td>CodeSapiens Summer Fest, Portfolio Building Challenge</td><td>Winner</td><td>Individual</td></tr><tr><td>Feb 2026</td><td><a href='https://drive.google.com/file/d/1dPl9viMqRkQIyPhmIbcaTboEI2PhmnxY/view?usp=sharing' target='_blank'>TCS CodeVita Season 13</a></td><td>Best Women Coder runner-up</td><td>Reported by the <i>Times of India</i>{{ref:toi}}</td></tr><tr><td>Feb 2026</td><td><a href='https://github.com/Joshni86/ClawCTF' target='_blank'>ClawCTF</a>, Rendezvous 2k26</td><td>Organizer</td><td>Multi-domain CTF with 60+ registrations</td></tr><tr><td>Jan 2026</td><td>Defy'26</td><td>Second runner-up</td><td>5-member team; presented <a href='#timecapsule'>TimeCapsule</a></td></tr><tr><td>Dec 2025</td><td>RootSprout Build From Scratch</td><td>Winner</td><td>Submitted <a href='#yapformer'>Yapformer</a></td></tr><tr><td>Jun 2025</td><td>AmpliCode Hackathon</td><td>Winner</td><td>2-member team with Aravind; presented <a href='#phishmate'>PhishMate</a></td></tr><tr><td>Mar 2025</td><td><a href='https://drive.google.com/file/d/1jQEMGqeFeG3EbwBQaB1rxaNGno9XPGwc/view?usp=drive_link' target='_blank'>ReVil'25 Binary Breakout</a></td><td>Winner</td><td>Team of 4</td></tr><tr><td>Dec 2024</td><td><a href='https://drive.google.com/file/d/1jPWZLCIpcsCJgIFlMsm_6J9MViN4bpCn/view?usp=drive_link' target='_blank'>SheBuilds Octocat Drawing Competition</a></td><td>Second runner-up</td><td>Individual</td></tr><tr><td>Aug 2024</td><td><a href='https://drive.google.com/file/d/12MwTKBbe_4kmrqt2VuL5EApU46_d5j9Y/view?usp=sharing' target='_blank'>Neo Codeathon</a></td><td>Winner</td><td>Hosted by R.M.K. Group of Institutions</td></tr></tbody></table></div>"
         }
       ]
     },
