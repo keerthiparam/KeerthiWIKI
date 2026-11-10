@@ -38,6 +38,13 @@
     $('#sidebarOverlay').addEventListener('click', closeDrawer);
     desktop.addEventListener('change', closeDrawer);
 
+    /* ---------- Profiles dropdown (article tab row) ---------- */
+    const pBtn = $('#profilesBtn'), pMenu = $('#profilesMenu');
+    const setProfiles = (open) => { pMenu.hidden = !open; pBtn.setAttribute('aria-expanded', String(open)); };
+    pBtn.addEventListener('click', (e) => { e.stopPropagation(); setProfiles(pMenu.hidden); });
+    document.addEventListener('click', (e) => { if (!pMenu.hidden && !pMenu.contains(e.target)) setProfiles(false); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !pMenu.hidden) { setProfiles(false); pBtn.focus(); } });
+
     /* ---------- Placeholder for missing profile image ---------- */
     const PLACEHOLDER = 'data:image/svg+xml;utf8,' + encodeURIComponent(
         '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"><rect width="120" height="120" fill="#c8ccd1"/>' +
